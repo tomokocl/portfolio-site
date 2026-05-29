@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>豆井知子 / 椎葉ともこ Portfolio</title>
+  <meta name="description" content="AI活用、業務改善、コンテンツ設計を非エンジニア目線で実装までつなぐ豆井知子のポートフォリオ。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="サイトヘッダー">
+    <a class="brand" href="#top">Tomoko Mamei</a>
+    <nav class="nav" aria-label="主要ナビゲーション">
+      <a href="#works">Works</a>
+      <a href="#skills">Skills</a>
+      <a href="#career">Career</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img class="hero-bg" src="assets/hero-workspace-v2.png" alt="">
+      <div class="hero-copy">
+        <p class="eyebrow">AI Workflow / Content Direction</p>
+        <h1>
+          <span>AIと業務を、</span>
+          <span>やさしくつなぐ。</span>
+        </h1>
+        <p class="lead">
+          現場の言葉を整理しながら、生成AIや小さな自動化を、
+          使える仕組みに落とし込みます。
+        </p>
+        <div class="hero-actions" aria-label="主要アクション">
+          <a class="button primary" href="#works">実績を見る</a>
+          <a class="button secondary" href="#contact">相談する</a>
+        </div>
+      </div>
+      <p class="hero-name">Tomoko Mamei / Shiiba Tomoko</p>
+    </section>
+
+    <section class="intro-accent" aria-label="できることの概要">
+      <div>
+        <p class="eyebrow">What I Do</p>
+        <p>
+          AIツールを「導入して終わり」にせず、現場で使う言葉・流れ・運用まで整えます。
+          企画、講座、SNS、業務改善を横断して、小さく試せる形から伴走します。
+        </p>
+      </div>
+      <figure>
+        <img src="assets/intro-workflow-accent.png" alt="ノートとお茶が置かれた静かなデスク">
+      </figure>
+    </section>
+
+    <section class="section intro" aria-labelledby="intro-title">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2 id="intro-title" class="copy-lines">
+          <span>業務理解から実装まで、</span>
+          <span>間をつなぐ人。</span>
+        </h2>
+      </div>
+      <div class="intro-text">
+        <p>
+          WEBライター、Instagram運用、AI活用支援・講師、教材ディレクション、業務改善ツール開発へと活動領域を広げてきました。
+          現在はフリーランスおよび合同会社CalmR代表として、AI活用支援・コンテンツ制作・自動化の支援を行っています。
+        </p>
+        <p>
+          強みは、専門用語だけで進めず、現場の悩みを整理して「小さく作って、使える形にする」こと。
+          重い構成よりも、保守しやすい最小構成を選び、必要なところだけAIやAPI連携を組み込みます。
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="works" aria-labelledby="works-title">
+      <div class="section-heading">
+        <p class="eyebrow">Works</p>
+        <h2 id="works-title">構築・運用してきたもの</h2>
+      </div>
+      <div class="work-grid">
+        <article class="work-card">
+          <p class="work-number">01</p>
+          <h3>ウェビナー運用支援ツール</h3>
+          <p>Cloudflare FunctionsからOpenAI API、Slack、Google Drive、Google Sheetsをつなぎ、告知や運用の作業を軽くする構成を設計・実装。</p>
+          <dl>
+            <div><dt>Role</dt><dd>要件整理 / 構成設計 / 実装 / デプロイ</dd></div>
+            <div><dt>Stack</dt><dd>HTML, CSS, JS, Cloudflare, GAS, OpenAI API</dd></div>
+          </dl>
+        </article>
+        <article class="work-card">
+          <p class="work-number">02</p>
+          <h3>GPTsツール群</h3>
+          <p>十数本のGPTsを用途別に制作し、GitHub Pagesで一覧化。現場で使いやすい単位に分けて公開・配布。</p>
+          <dl>
+            <div><dt>Role</dt><dd>ヒアリング / プロンプト設計 / 実装 / サイト化</dd></div>
+            <div><dt>Stack</dt><dd>GPTs, HTML, GitHub Pages</dd></div>
+          </dl>
+        </article>
+        <article class="work-card">
+          <p class="work-number">03</p>
+          <h3>Instagram分析ツール</h3>
+          <p>運用者として欲しい指標をもとに、Instagram Graph APIで取得したデータを分析・可視化する個人開発ツールを再設計中。</p>
+          <dl>
+            <div><dt>Role</dt><dd>指標設計 / API連携 / UI/UX再設計</dd></div>
+            <div><dt>Stack</dt><dd>Instagram Graph API, Cloudflare Pages</dd></div>
+          </dl>
+        </article>
+        <article class="work-card">
+          <p class="work-number">04</p>
+          <h3>個人用AIエージェント基盤</h3>
+          <p>VPS上のClaude CodeとDiscord Botを組み合わせ、用途別のエージェントとやり取りできる自分専用の運用基盤を構築。</p>
+          <dl>
+            <div><dt>Role</dt><dd>VPS構築 / Bot開発 / 役割設計 / 運用</dd></div>
+            <div><dt>Stack</dt><dd>VPS, Remote SSH, Discord Bot, Claude Code</dd></div>
+          </dl>
+        </article>
+      </div>
+      <p class="note">制作物・コードの実物は守秘義務の関係上、構成例として掲載しています。</p>
+    </section>
+
+    <section class="section split" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2 id="skills-title">扱える領域</h2>
+      </div>
+      <div class="skill-columns">
+        <div>
+          <h3>AI / Automation</h3>
+          <ul class="tag-list">
+            <li>ChatGPT</li>
+            <li>Claude</li>
+            <li>Claude Code</li>
+            <li>Codex</li>
+            <li>GPTs</li>
+            <li>Dify</li>
+            <li>n8n</li>
+            <li>OpenAI API</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Workflow / Infrastructure</h3>
+          <ul class="tag-list">
+            <li>Cloudflare Pages</li>
+            <li>Cloudflare Functions</li>
+            <li>GAS</li>
+            <li>Webhook</li>
+            <li>Google Sheets</li>
+            <li>Slack</li>
+            <li>Discord</li>
+            <li>VPS</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Content / SNS</h3>
+          <ul class="tag-list">
+            <li>SEO Writing</li>
+            <li>Instagram運用</li>
+            <li>広告運用</li>
+            <li>教材ディレクション</li>
+            <li>ウェビナー企画</li>
+            <li>講師登壇</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section career" id="career" aria-labelledby="career-title">
+      <div class="section-heading">
+        <p class="eyebrow">Career</p>
+        <h2 id="career-title">経歴</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <time>2024.12 - 現在</time>
+          <div>
+            <h3>株式会社SHIFTAI / 業務委託</h3>
+            <p>PM、コンテンツ企画、講師、ツール開発を担当。受講生から講師・運営側へロールを広げ、AI活用講座や業務改善ツール構築に従事。</p>
+          </div>
+        </li>
+        <li>
+          <time>2024.08 - 現在</time>
+          <div>
+            <h3>合同会社CalmR 設立・代表</h3>
+            <p>AI活用支援、コンテンツ制作、業務改善を中心に活動。</p>
+          </div>
+        </li>
+        <li>
+          <time>2023.01 - 現在</time>
+          <div>
+            <h3>Instagram運用代行</h3>
+            <p>コンテンツ企画から運用改善、広告運用まで一貫対応。2.7万フォロワー規模のアカウント運用に関与。</p>
+          </div>
+        </li>
+        <li>
+          <time>2019 - 2025.07</time>
+          <div>
+            <h3>SEOライティング</h3>
+            <p>検索意図設計、構成作成、執筆まで対応し、6年間で200本以上の記事を制作。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title" class="copy-lines">
+          <span>AI活用や業務改善の相談を、</span>
+          <span>現場目線で。</span>
+        </h2>
+        <p>週10-20時間程度の稼働、土日対応、基本24時間以内の返信が可能です。</p>
+      </div>
+      <a class="button primary" href="https://note.com/mnyt/n/n2d35b1b0d3ed" target="_blank" rel="noreferrer">自己紹介noteを見る</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>&copy; 2026 Tomoko Mamei / Shiiba Tomoko</small>
+  </footer>
+</body>
+</html>

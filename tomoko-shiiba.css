@@ -214,6 +214,8 @@ h1 {
 }
 
 .intro,
+.problem,
+.outcomes,
 .proof,
 .session,
 .journey,
@@ -227,6 +229,8 @@ h1 {
 }
 
 .intro,
+.problem,
+.outcomes,
 .proof,
 .session,
 .journey,
@@ -286,6 +290,46 @@ h1 {
   color: var(--muted);
   font-size: clamp(16px, 1.55vw, 21px);
   line-height: 2;
+}
+
+.problem {
+  background: var(--cream);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(36px, 5vw, 64px);
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.problem-grid p {
+  max-width: none;
+  min-height: 150px;
+  margin: 0;
+  padding: clamp(22px, 3vw, 34px);
+  display: flex;
+  align-items: flex-end;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: clamp(16px, 1.35vw, 20px);
+  line-height: 1.8;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.outcomes {
+  background: var(--mist);
+}
+
+.outcomes .session-grid {
+  margin-top: clamp(34px, 4vw, 54px);
+}
+
+.session .session-grid {
+  margin-top: clamp(34px, 4vw, 54px);
 }
 
 .proof {
@@ -588,6 +632,8 @@ h1 {
   }
 
   .intro,
+  .problem,
+  .outcomes,
   .proof,
   .session,
   .journey,
@@ -630,9 +676,14 @@ h1 {
   }
 
   .session-grid,
+  .problem-grid,
   .journey ol,
   .actions {
     grid-template-columns: 1fr;
+  }
+
+  .problem-grid p {
+    min-height: auto;
   }
 
   .session-grid article {

@@ -186,6 +186,31 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
+.mond-note {
+  display: grid;
+  grid-template-columns: minmax(128px, 0.22fr) minmax(0, 1fr);
+  gap: clamp(30px, 5vw, 76px);
+  padding: clamp(42px, 5vw, 72px) clamp(22px, 6vw, 98px);
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+
+.mond-note-body {
+  max-width: 980px;
+}
+
+.mond-note p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(15px, 1.28vw, 18px);
+  line-height: 2;
+}
+
+.mond-note p span {
+  display: block;
+}
+
 .hero-cta p {
   margin: 0;
   color: var(--muted);
@@ -229,6 +254,19 @@ h1 {
   gap: clamp(30px, 5vw, 76px);
   padding: clamp(64px, 8vw, 112px) clamp(22px, 6vw, 98px);
   border-bottom: 1px solid var(--line);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 720ms ease,
+    transform 720ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .profile-section {
@@ -358,6 +396,10 @@ h1 {
   line-height: 1.85;
   word-break: normal;
   overflow-wrap: normal;
+}
+
+.skill-row p span {
+  display: block;
 }
 
 .problem-list,
@@ -593,6 +635,11 @@ h1 {
     justify-items: start;
     gap: 14px;
     padding: 22px 18px 28px;
+  }
+
+  .mond-note {
+    grid-template-columns: 1fr;
+    padding: 34px 18px;
   }
 
   .hero-cta a {

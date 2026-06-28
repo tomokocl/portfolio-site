@@ -46,12 +46,24 @@
         </div>
       </section>
 
-      <section class="hero-cta" aria-label="相談への入り口">
+      <section class="mond-note reveal">
+        <div class="section-label">Ask</div>
+        <div class="mond-note-body">
+          <p>
+            <span>Mondは、価格を自分で決めて相談できる場所です。</span>
+            <span>今のつまりを整理したい。</span>
+            <span>変わるために話を聞いてほしい。</span>
+            <span>そう思ったタイミングで送ってください。</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="hero-cta reveal" aria-label="相談への入り口">
         <p>相談内容の整理から始められます。</p>
         <a href="https://mond.how/shibatomoko">Mondで気軽に相談する</a>
       </section>
 
-      <section class="profile-section" id="about">
+      <section class="profile-section reveal" id="about">
         <div class="section-label">01 / Profile</div>
         <div class="profile-layout">
           <figure class="profile-visual">
@@ -74,15 +86,15 @@
               相談者やチームが次に進める状態をつくります。
             </p>
             <div class="skill-row" aria-label="強み">
-              <p><strong>業務分解</strong><span>やりたいことを手順と設計に分ける。</span></p>
-              <p><strong>感情翻訳</strong><span>引っかかりや違和感の理由を拾う。</span></p>
-              <p><strong>言語化</strong><span>伝わる言葉と相談導線に整える。</span></p>
+              <p><strong>業務分解</strong><span>やりたいことを、</span><span>手順と設計に分ける。</span></p>
+              <p><strong>感情翻訳</strong><span>引っかかりの理由を、</span><span>言葉にする。</span></p>
+              <p><strong>言語化</strong><span>伝わる言葉と、</span><span>相談導線に整える。</span></p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="problem-section" id="problem">
+      <section class="problem-section reveal" id="problem">
         <div class="section-label">02 / Scope</div>
         <div class="section-copy">
           <h2>
@@ -93,12 +105,11 @@
             <p><span>商品・サービス文</span>提供内容、対象者、相談導線をわかりやすく整えます。</p>
             <p><span>AI活用・GPTs</span>壁打ち、プロンプト、AIアシスタントの使い方を設計します。</p>
             <p><span>業務フロー・ツール</span>作業の流れ、要件、設計書を実装前に整理します。</p>
-            <p><span>フィードバック整理</span>依頼者や上司の意図を分解し、次の対応に落とし込みます。</p>
           </div>
         </div>
       </section>
 
-      <section class="outcome-section">
+      <section class="outcome-section reveal">
         <div class="section-label">03 / Outcome</div>
         <div class="section-copy">
           <h2>
@@ -125,7 +136,7 @@
         </div>
       </section>
 
-      <section class="service-section" id="service">
+      <section class="service-section reveal" id="service">
         <div class="section-label">04 / Service</div>
         <div class="section-copy">
           <h2>
@@ -152,7 +163,7 @@
         </div>
       </section>
 
-      <section class="proof-section" id="proof">
+      <section class="proof-section reveal" id="proof">
         <div class="section-label">05 / Proof</div>
         <div class="proof-layout">
           <figure class="proof-image">
@@ -175,7 +186,7 @@
         </div>
       </section>
 
-      <section class="flow-section">
+      <section class="flow-section reveal">
         <div class="section-label">06 / Flow</div>
         <div class="section-copy">
           <h2>
@@ -190,7 +201,7 @@
         </div>
       </section>
 
-      <section class="contact" id="contact">
+      <section class="contact reveal" id="contact">
         <div class="section-label">Contact</div>
         <div class="contact-body">
           <h2>
@@ -227,5 +238,26 @@
         </div>
       </section>
     </main>
+    <script>
+      const revealItems = document.querySelectorAll(".reveal");
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.18 }
+        );
+
+        revealItems.forEach((item) => observer.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      }
+    </script>
   </body>
 </html>

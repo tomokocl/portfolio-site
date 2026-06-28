@@ -114,11 +114,12 @@ a {
 .hero-copy {
   position: relative;
   z-index: 2;
+  width: 100%;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 12svh clamp(18px, 4vw, 58px) 24svh;
+  padding: 12svh clamp(40px, 4vw, 58px) 24svh;
   color: var(--white);
 }
 
@@ -136,7 +137,7 @@ a {
 h1 {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(70px, 14vw, 208px);
+  font-size: clamp(128px, 13.2vw, 190px);
   font-weight: 400;
   line-height: 0.84;
   letter-spacing: 0;

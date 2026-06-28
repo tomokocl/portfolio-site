@@ -374,18 +374,17 @@ h1 {
 .service-list article,
 .flow-list li {
   display: grid;
-  grid-template-columns: minmax(160px, 0.22fr) minmax(0, 1fr);
+  grid-template-columns: minmax(260px, 0.28fr) minmax(0, 1fr);
   gap: clamp(22px, 4vw, 56px);
   padding: 24px 0;
   border-bottom: 1px solid var(--line);
   background: transparent;
 }
 
-.problem-list p::before {
-  content: "悩み";
+.problem-list p span {
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
+  font-size: clamp(18px, 1.55vw, 22px);
+  line-height: 1.45;
 }
 
 .card-grid {
@@ -651,10 +650,6 @@ h1 {
   .flow-list li {
     grid-template-columns: 1fr;
     gap: 10px;
-  }
-
-  .problem-list p::before {
-    font-size: 13px;
   }
 
   .card-grid article {

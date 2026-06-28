@@ -250,7 +250,7 @@ h1 {
 }
 
 .intro-visual {
-  width: min(180px, 100%);
+  width: min(230px, 100%);
   margin: 0;
   border: 1px solid var(--line);
   overflow: hidden;
@@ -261,8 +261,8 @@ h1 {
   display: block;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  filter: saturate(0.62) brightness(1.08) contrast(0.9);
-  mix-blend-mode: multiply;
+  object-position: 28% 72%;
+  filter: saturate(0.68) brightness(1.02) contrast(0.92);
 }
 
 .section-body,
@@ -621,7 +621,7 @@ h1 {
   }
 
   .intro-visual {
-    width: 150px;
+    width: 180px;
   }
 
   .journal-strip p {

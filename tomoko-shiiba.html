@@ -46,23 +46,37 @@
         </div>
       </section>
 
-      <section class="mond-note reveal">
+      <section class="mond-note">
         <div class="section-label">Ask</div>
         <div class="mond-note-body">
           <p>
-            <span>ひとりで考えても進まないことを、</span>
-            <span>言葉・手順・AIの使い方まで整理します。</span>
-            <span>発信・商品・業務の止まりを送ってください。</span>
+            <span>うまくいかない出来事そのものより、</span>
+            <span>そこに自分がどんな意味をつけたのかで、</span>
+            <span>苦しくなることがあります。</span>
+          </p>
+          <p>
+            <span>否定された気がした。</span>
+            <span>わかってもらえないと思った。</span>
+            <span>また同じことを繰り返している気がした。</span>
+          </p>
+          <p>
+            <span>その受け取り方をつくっている感情や思い込みを、</span>
+            <span>テキストで一緒にほどきます。</span>
+          </p>
+          <p>
+            <span>仕事、人間関係、発信、商品、AI活用まで。</span>
+            <span>ひとりで抱えて止まっているものを、</span>
+            <span>動き出せる形に整えます。</span>
           </p>
         </div>
       </section>
 
-      <section class="hero-cta reveal" aria-label="相談への入り口">
-        <p>相談内容の整理から始められます。</p>
-        <a href="https://mond.how/shibatomoko">Mondで気軽に相談する</a>
+      <section class="hero-cta" aria-label="相談への入り口">
+        <p>整理できていなくても大丈夫です。今のモヤモヤをそのまま送ってください。</p>
+        <a href="https://mond.how/shibatomoko">Mondで今のモヤモヤを送る</a>
       </section>
 
-      <section class="profile-section reveal" id="about">
+      <section class="profile-section" id="about">
         <div class="section-label">01 / Profile</div>
         <div class="profile-layout">
           <figure class="profile-visual">
@@ -93,7 +107,7 @@
         </div>
       </section>
 
-      <section class="problem-section reveal" id="problem">
+      <section class="problem-section" id="problem">
         <div class="section-label">02 / Scope</div>
         <div class="section-copy">
           <h2>
@@ -108,7 +122,7 @@
         </div>
       </section>
 
-      <section class="outcome-section reveal">
+      <section class="outcome-section">
         <div class="section-label">03 / Outcome</div>
         <div class="section-copy">
           <h2>
@@ -135,7 +149,7 @@
         </div>
       </section>
 
-      <section class="service-section reveal" id="service">
+      <section class="service-section" id="service">
         <div class="section-label">04 / Service</div>
         <div class="section-copy">
           <h2>
@@ -162,7 +176,7 @@
         </div>
       </section>
 
-      <section class="proof-section reveal" id="proof">
+      <section class="proof-section" id="proof">
         <div class="section-label">05 / Proof</div>
         <div class="proof-layout">
           <figure class="proof-image">
@@ -185,7 +199,7 @@
         </div>
       </section>
 
-      <section class="flow-section reveal">
+      <section class="flow-section">
         <div class="section-label">06 / Flow</div>
         <div class="section-copy">
           <h2>
@@ -200,7 +214,7 @@
         </div>
       </section>
 
-      <section class="contact reveal" id="contact">
+      <section class="contact" id="contact">
         <div class="section-label">Contact</div>
         <div class="contact-body">
           <h2>
@@ -215,7 +229,7 @@
                 <path d="M12 18h.01" />
                 <path d="M21 12a9 9 0 1 1-4.63-7.87" />
               </svg>
-              <span>Mondで相談する</span>
+              <span>Mondで今のモヤモヤを送る</span>
             </a>
             <a href="https://coconala.com/users/1076132">
               <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -237,26 +251,5 @@
         </div>
       </section>
     </main>
-    <script>
-      const revealItems = document.querySelectorAll(".reveal");
-
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("is-visible");
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.18 }
-        );
-
-        revealItems.forEach((item) => observer.observe(item));
-      } else {
-        revealItems.forEach((item) => item.classList.add("is-visible"));
-      }
-    </script>
   </body>
 </html>

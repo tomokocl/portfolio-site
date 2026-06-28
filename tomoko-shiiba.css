@@ -147,7 +147,7 @@ h1 {
   position: absolute;
   z-index: 3;
   right: clamp(20px, 4vw, 64px);
-  bottom: clamp(26px, 5vw, 58px);
+  bottom: clamp(18px, 3vw, 34px);
   width: min(560px, calc(100% - 40px));
   padding: 22px 24px;
   background: rgba(255, 253, 248, 0.9);
@@ -176,12 +176,54 @@ h1 {
   display: block;
 }
 
+.hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(18px, 4vw, 54px);
+  padding: 28px clamp(22px, 6vw, 98px);
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-cta p {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(14px, 1.25vw, 17px);
+  line-height: 1.8;
+}
+
+.hero-cta a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid rgba(30, 33, 30, 0.32);
+  color: var(--ink);
+  background: transparent;
+  font-size: clamp(14px, 1.15vw, 16px);
+  line-height: 1.4;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.hero-cta a:hover {
+  background: var(--mist);
+  border-color: rgba(30, 33, 30, 0.52);
+}
+
 .intro,
 .proof,
 .session,
 .journey,
 .contact {
   padding: clamp(72px, 10vw, 138px) clamp(22px, 6vw, 98px);
+}
+
+.intro {
+  padding-top: clamp(64px, 8vw, 104px);
+  padding-bottom: clamp(86px, 10vw, 138px);
 }
 
 .intro,
@@ -199,6 +241,28 @@ h1 {
   color: var(--muted);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 15px;
+}
+
+.section-rail {
+  display: grid;
+  gap: clamp(22px, 4vw, 54px);
+  align-content: start;
+}
+
+.intro-visual {
+  width: min(180px, 100%);
+  margin: 0;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.intro-visual img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: saturate(0.62) brightness(1.08) contrast(0.9);
+  mix-blend-mode: multiply;
 }
 
 .section-body,
@@ -349,9 +413,9 @@ h1 {
 .journal-strip {
   display: grid;
   grid-template-columns: minmax(280px, 0.42fr) minmax(0, 1fr);
-  align-items: end;
+  align-items: center;
   gap: clamp(28px, 6vw, 92px);
-  padding: clamp(72px, 10vw, 138px) clamp(22px, 6vw, 98px);
+  padding: clamp(72px, 9vw, 118px) clamp(22px, 6vw, 98px);
   background: var(--paper);
   border-bottom: 1px solid var(--line);
 }
@@ -502,13 +566,25 @@ h1 {
   .hero-message {
     left: 18px;
     right: 18px;
-    bottom: 22px;
+    bottom: 16px;
     width: auto;
     padding: 18px;
   }
 
   .hero-message .lead {
     font-size: 21px;
+  }
+
+  .hero-cta {
+    display: grid;
+    justify-items: start;
+    gap: 14px;
+    padding: 22px 18px 28px;
+  }
+
+  .hero-cta a {
+    width: 100%;
+    justify-content: center;
   }
 
   .intro,
@@ -542,6 +618,10 @@ h1 {
   .profile-visual {
     position: static;
     max-width: 230px;
+  }
+
+  .intro-visual {
+    width: 150px;
   }
 
   .journal-strip p {

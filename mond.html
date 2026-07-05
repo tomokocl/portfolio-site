@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <!--
+    差し替えチェックリスト
+    - [ ] OGP画像: assets/portfolio-eyecatch.png
+    - [ ] favicon: data URI placeholder
+    - [ ] mond.html の仕様説明文・質問例: 要確認コメント箇所
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mondで相談する｜椎葉ともこ</title>
+  <meta name="description" content="整理できてなくて、いいんです。モヤモヤのまま、送ってください。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="椎葉ともこ｜「なんか違う」の正体を見つける人">
+  <meta property="og:description" content="スキルはあるのに動けない。考えすぎて、また止まる。">
+  <meta property="og:image" content="assets/portfolio-eyecatch.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232e5f63'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='28' fill='white' font-family='sans-serif'%3E椎%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="index.html">椎葉ともこ</a>
+    <nav class="site-nav" aria-label="主要ナビゲーション">
+      <a href="index.html#about">していること</a>
+      <a href="index.html#links">入口</a>
+      <a href="mond.html" aria-current="page">mond</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="mond-hero" aria-labelledby="mond-title">
+      <p class="label">mond</p>
+      <h1 id="mond-title">
+        整理できてなくて、いいんです。<br>
+        モヤモヤのまま、送ってください。
+      </h1>
+      <a class="button button-primary" href="https://mond.how/shibatomoko" target="_blank" rel="noopener">mondで送ってみる</a>
+    </section>
+
+    <section class="section mond-detail" aria-labelledby="mond-about-title">
+      <div class="section-heading">
+        <p class="label">About mond</p>
+        <h2 id="mond-about-title">mond とは</h2>
+      </div>
+      <div class="text-block">
+        <!-- 要確認 -->
+        <p>mondは、匿名で質問や相談を送れるサービスです。</p>
+        <p>アカウント登録をしなくても送れるため、名前を出さずに今の状況を書けます。</p>
+        <p>まとまった文章でなくても、短いメモのような形で送って大丈夫です。</p>
+      </div>
+    </section>
+
+    <section class="section examples" aria-labelledby="examples-title">
+      <div class="section-heading">
+        <p class="label">Examples</p>
+        <h2 id="examples-title">たとえばこんな相談</h2>
+      </div>
+      <!-- 要確認 -->
+      <ul class="example-list">
+        <li>やりたいことはあるのに、何から手をつければいいかわからない</li>
+        <li>AIを勉強してるけど、「私なんかが」って気持ちが消えない</li>
+        <li>今の働き方が違う気がする。でも何が違うのか言葉にできない</li>
+      </ul>
+    </section>
+
+    <section class="mond-cta" aria-label="mondへの送信">
+      <a class="button button-primary" href="https://mond.how/shibatomoko" target="_blank" rel="noopener">mondで送ってみる</a>
+      <a class="home-link" href="index.html">ホームへ戻る</a>
+      <p>
+        いきなり送るのはちょっと、という方はまず
+        <a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">読んでみてください</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2026 Tomoko Shiiba</small>
+    <nav aria-label="フッターリンク">
+      <a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">Substack</a>
+      <a href="mond.html">mond</a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,129 +1,167 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <!--
-    差し替えチェックリスト
-    - [x] stand.fm: https://stand.fm/channels/66814520b3df431386ba6bda
-    - [x] X: https://x.com/tomo19055918
-    - [ ] {{INSTAGRAM_URL}}
-    - [ ] {{COCONALA_URL_1}} / {{COCONALA_URL_2}}
-    - [ ] OGP画像: assets/portfolio-eyecatch.png
-    - [ ] favicon: data URI placeholder
-    - [ ] プロフィール写真: ヒーローに配置する場合はSubstackと同じアイコン画像を使用予定
-  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>椎葉ともこ｜「なんか違う」の正体を見つける人</title>
-  <meta name="description" content="スキルはあるのに動けない。考えすぎて、また止まる。それ、頭の中のどこかに引っかかりがあるだけです。">
+  <title>椎葉ともこ｜「なんか違う」を動ける言葉に変える人</title>
+  <meta name="description" content="モヤモヤした思考、自分責め、言葉にならない違和感を整理し、自分の答えが見える言葉にしていきます。AIと言語化で、動ける状態をつくる椎葉ともこの個人ブランドサイトです。">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="椎葉ともこ｜「なんか違う」の正体を見つける人">
-  <meta property="og:description" content="スキルはあるのに動けない。考えすぎて、また止まる。">
-  <meta property="og:image" content="assets/portfolio-eyecatch.png">
+  <meta property="og:title" content="椎葉ともこ｜「なんか違う」を動ける言葉に変える人">
+  <meta property="og:description" content="モヤモヤした思考、自分責め、言葉にならない違和感を整理し、自分の答えが見える言葉にしていきます。">
+  <meta property="og:image" content="./assets/portfolio-eyecatch.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232e5f63'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='28' fill='white' font-family='sans-serif'%3E椎%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234E7D72'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='28' fill='white' font-family='serif'%3E椎%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="site-brand" href="index.html">椎葉ともこ</a>
+    <a class="site-brand" href="./index.html">椎葉ともこ</a>
     <nav class="site-nav" aria-label="主要ナビゲーション">
-      <a href="#about">していること</a>
-      <a href="#links">入口</a>
-      <a href="mond.html">mond</a>
+      <a href="./index.html" aria-current="page">はじめに</a>
+      <a href="./about.html">椎葉ともこについて</a>
+      <a href="./session.html">していること</a>
+      <a href="./mond.html">読む・送る</a>
+      <a href="./ai-support.html">依頼する</a>
+      <a href="./contact.html">お問い合わせ</a>
     </nav>
+    <a class="header-cta" href="./mond.html">相談する</a>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="label">匿名相談・壁打ち</p>
-        <h1 id="hero-title">椎葉ともこ</h1>
-        <p class="headline">「なんか違う」の正体を見つける人</p>
-        <p class="bio">
-          スキルはあるのに動けない。考えすぎて、また止まる。<br>
-          それ、頭の中のどこかに引っかかりがあるだけです。<br>
-          「ちょっと聞いて」を、動ける言葉にして返します。
-        </p>
-        <a class="button button-primary" href="mond.html">話を聞いてほしい人はこちら</a>
+    <section class="hero hero-home">
+      <div class="hero-text">
+        <p class="kicker">言葉の整理 / 思考と感情の整理</p>
+        <h1>「なんか違う」を、<br>動ける言葉に変える。</h1>
+        <p class="lead">モヤモヤした思考、自分責め、言葉にならない違和感を整理し、自分の答えが見える言葉にしていきます。</p>
+        <p class="lead">答えを渡すのではなく、その人が自分の答えに戻るための場をつくります。</p>
+        <div class="button-row">
+          <a class="button primary" href="./mond.html">相談してみる</a>
+          <a class="button secondary" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">読んでみる</a>
+        </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <img src="assets/intro-workflow-accent.png" alt="">
-      </div>
+      <figure class="hero-image">
+        <img src="./assets/tomoko-shiiba/hero-editorial-v2.png" alt="静かな部屋で考えを整理している女性">
+      </figure>
     </section>
 
-    <section class="section about" id="about" aria-labelledby="about-title">
+    <section class="section split-section">
       <div class="section-heading">
-        <p class="label">About</p>
-        <h2 id="about-title">何をしている人か</h2>
+        <p class="kicker">止まっている理由を、言葉にする</p>
+        <h2>こんなふうに止まっていませんか。</h2>
       </div>
-      <div class="text-block">
-        <p>AI講師として3年、のべ5,000人以上に教えてきました。</p>
-        <p>3万人規模のコミュニティ運営にも携わっています。</p>
-        <p>その傍らで、個人の「動けない」の壁打ち相手をしています。</p>
-        <p>やり方を伝えるだけじゃなく、誰かの"変わるきっかけ"になる言葉を届けたい。</p>
+      <div class="prose">
+        <p>スキルはある。やりたいことも、たぶんある。でも、なぜか動けない。</p>
+        <p>頭ではわかっているのに、「私なんかが」「これでいいのかな」「なんか違う」が残ってしまう。</p>
+        <p>それは能力不足ではなく、まだ言葉になっていない前提や思い込みがあるだけかもしれません。</p>
+        <ul class="check-list">
+          <li>スキルはあるのに、動けない</li>
+          <li>やりたいことはあるのに、何から始めればいいかわからない</li>
+          <li>考えすぎて、本音がわからなくなる</li>
+          <li>「私なんか」が抜けない</li>
+          <li>今の働き方や発信に、言葉にできない違和感がある</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section" id="links" aria-labelledby="links-title">
+    <section class="section statement-section">
+      <div class="narrow">
+        <p class="kicker">大切にしていること</p>
+        <h2>答えを渡すのではなく、<br>自分の答えに戻る場をつくる。</h2>
+        <p>私は、誰かの正解になるために言葉を渡すのではありません。</p>
+        <p>ぐるぐるした思考、自分責め、言葉にならない違和感を一緒に整理しながら、その人が自分の感覚を取り戻すための場をつくります。</p>
+        <p>依存ではなく、自立へ。救うのではなく、戻るための整理を。</p>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="section-heading">
-        <p class="label">Entrances</p>
-        <h2 id="links-title">相談・読む・聴く・発信を見る</h2>
+        <p class="kicker">していること</p>
+        <h2>混ざっているものを、見える形にする。</h2>
       </div>
-      <div class="entry-grid">
-        <article class="entry-card">
-          <div>
-            <p class="entry-name">mond</p>
-            <h3>匿名で相談する</h3>
-          </div>
-          <a href="mond.html" aria-label="mondの案内ページへ">詳しく見る</a>
+      <div class="card-grid three">
+        <article class="card">
+          <h3>言葉にする</h3>
+          <p>整理できていない違和感や感情を、そのまま受け取り、言葉にしていきます。</p>
         </article>
-        <article class="entry-card">
-          <div>
-            <p class="entry-name">Substack</p>
-            <h3>壁打ちログを読む</h3>
-          </div>
-          <a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">読む</a>
+        <article class="card">
+          <h3>切り分ける</h3>
+          <p>事実・感情・思い込み・本音を分けて、絡まって見えていたものを見える形にします。</p>
         </article>
-        <article class="entry-card">
-          <div>
-            <p class="entry-name">stand.fm</p>
-            <h3>音声で聴く</h3>
-          </div>
-          <a href="https://stand.fm/channels/66814520b3df431386ba6bda" target="_blank" rel="noopener">聴く</a>
+        <article class="card">
+          <h3>動ける形にする</h3>
+          <p>考えて終わりではなく、今の自分が無理なく進める言葉や選択肢に整えます。</p>
         </article>
-        <article class="entry-card">
-          <div>
-            <p class="entry-name">X / Instagram</p>
-            <h3>日々の発信</h3>
-          </div>
-          <div class="inline-links" aria-label="SNSリンク">
-            <a href="https://x.com/tomo19055918" target="_blank" rel="noopener">X</a>
-            <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener">Instagram</a>
-          </div>
+      </div>
+      <p class="note">必要に応じてAIも使いながら、思考の整理や言語化を進めます。AIに答えを出してもらうのではなく、自分の中にある答えを見える形にするために使います。</p>
+    </section>
+
+    <section class="section surface-section" id="entrance">
+      <div class="section-heading">
+        <p class="kicker">入口</p>
+        <h2>今の状態に合わせて、入口を選んでください。</h2>
+      </div>
+      <div class="card-grid four">
+        <article class="card">
+          <span class="card-label">読む</span>
+          <h3>まず読んでみる</h3>
+          <p>ぐるぐる思考、自分責め、思い込みの整理について書いています。言葉の温度感を知りたい方はこちらから。</p>
+          <a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">Substackを読む</a>
+        </article>
+        <article class="card">
+          <span class="card-label">送る</span>
+          <h3>モヤモヤを送る</h3>
+          <p>整理できていなくても大丈夫です。短いメモのような形で、今の引っかかりを送れます。</p>
+          <a href="./mond.html">匿名で送る</a>
+        </article>
+        <article class="card">
+          <span class="card-label">聴く</span>
+          <h3>声で受け取る</h3>
+          <p>読むより、声で受け取りたい方へ。日々の気づきや言葉の整理を音声で届けています。</p>
+          <a href="https://stand.fm/channels/66814520b3df431386ba6bda" target="_blank" rel="noopener">stand.fmを聴く</a>
+        </article>
+        <article class="card">
+          <span class="card-label">相談する</span>
+          <h3>個別に整理する</h3>
+          <p>一人では切り分けにくい思い込みや、仕事・発信・生き方の詰まりを一緒に整理します。</p>
+          <a href="./session.html">セッションを見る</a>
         </article>
       </div>
     </section>
 
-    <section class="work-menu" aria-labelledby="work-title">
-      <div>
-        <p class="label">Work Menu</p>
-        <h2 id="work-title">依頼したい方へ</h2>
+    <section class="section trust-section">
+      <div class="section-heading">
+        <p class="kicker">信頼の土台</p>
+        <h2>現実の場で、言葉とAIを扱ってきました。</h2>
       </div>
-      <ul class="work-links">
-        <li><a href="{{COCONALA_URL_1}}" target="_blank" rel="noopener">業務改善・AI活用サポート</a></li>
-        <li><a href="{{COCONALA_URL_2}}" target="_blank" rel="noopener">潜在意識の書き換え</a></li>
-      </ul>
+      <div class="stats-grid">
+        <p><strong>AI講師として3年</strong><span>初心者にもわかりやすく伝える講座経験</span></p>
+        <p><strong>のべ5,000人以上</strong><span>AI活用を指導してきた実績</span></p>
+        <p><strong>3万人規模</strong><span>コミュニティ運営に携わった経験</span></p>
+        <p><strong>個人相談</strong><span>「動けない」「言葉にならない」を整理する対応</span></p>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="narrow">
+        <h2>まとまっていなくて、大丈夫です。</h2>
+        <p>今の違和感を、きれいな言葉にする必要はありません。モヤモヤしたまま、止まっているところからで大丈夫です。</p>
+        <div class="button-row">
+          <a class="button primary" href="./mond.html">匿名で相談する</a>
+          <a class="button secondary" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">読んでみる</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <small>&copy; 2026 Tomoko Shiiba</small>
     <nav aria-label="フッターリンク">
-      <a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">Substack</a>
-      <a href="mond.html">mond</a>
+      <a href="./about.html">椎葉ともこについて</a>
+      <a href="./mond.html">匿名で相談する</a>
+      <a href="https://x.com/tomo19055918" target="_blank" rel="noopener">X</a>
     </nav>
   </footer>
 </body>

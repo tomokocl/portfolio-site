@@ -308,38 +308,76 @@ h3 {
 }
 
 .page-hero-visual {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.62fr);
-  gap: clamp(38px, 7vw, 86px);
-  align-items: center;
+  align-items: end;
+  width: 100%;
+  max-width: none;
+  min-height: clamp(540px, 72svh, 760px);
+  margin: 0;
+  padding: 0 max(18px, calc((100% - var(--max-page)) / 2));
+  overflow: hidden;
+  background: #2b2924;
+}
+
+.page-hero-visual::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(28, 27, 24, 0.74), rgba(28, 27, 24, 0.38) 48%, rgba(28, 27, 24, 0.08)),
+    linear-gradient(180deg, rgba(28, 27, 24, 0.04), rgba(28, 27, 24, 0.64));
+  pointer-events: none;
 }
 
 .page-hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
   min-width: 0;
+  padding: clamp(120px, 14vw, 180px) 0 clamp(54px, 8vw, 88px);
+  color: var(--color-surface);
 }
 
 .page-hero-visual h1 {
-  max-width: 720px;
-  font-size: clamp(2.35rem, 4vw, 3.45rem);
+  max-width: 860px;
+  color: var(--color-surface);
+  font-size: clamp(2.35rem, 4.1vw, 3.65rem);
   line-height: 1.22;
+  text-shadow: 0 1px 22px rgba(0, 0, 0, 0.28);
+}
+
+.page-hero-visual h1 .phrase {
+  display: block;
 }
 
 .page-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   margin: 0;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .page-hero-image img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 100%;
+  aspect-ratio: auto;
   object-fit: cover;
-  filter: saturate(0.86) contrast(0.96);
+  object-position: center;
+  filter: saturate(0.86) contrast(0.96) brightness(0.94);
 }
 
 .page-hero p {
   max-width: var(--max-text);
   margin: 24px 0 0;
+}
+
+.page-hero-visual p {
+  color: rgba(255, 253, 248, 0.9);
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.24);
 }
 
 .page-hero .button {
@@ -792,6 +830,33 @@ h3 {
 
   .page-hero {
     padding-top: 56px;
+  }
+
+  .page-hero-visual {
+    width: 100%;
+    max-width: none;
+    min-height: calc(100svh - 132px);
+    margin-inline: 0;
+    padding-inline: 22px;
+  }
+
+  .page-hero-visual::after {
+    background:
+      linear-gradient(90deg, rgba(28, 27, 24, 0.72), rgba(28, 27, 24, 0.42)),
+      linear-gradient(180deg, rgba(28, 27, 24, 0.12), rgba(28, 27, 24, 0.72));
+  }
+
+  .page-hero-copy {
+    padding: 110px 0 44px;
+  }
+
+  .page-hero-visual h1 {
+    font-size: clamp(2.05rem, 9vw, 2.72rem);
+    line-height: 1.26;
+  }
+
+  .page-hero-visual p {
+    margin-top: 20px;
   }
 
   .page-hero-image {

@@ -25,7 +25,7 @@
       <a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">Substack</a>
       <a href="https://stand.fm/channels/66814520b3df431386ba6bda" target="_blank" rel="noopener">stand.fm</a>
       <a href="./ai-support.html">AI活用</a>
-      <a href="./contact.html">お問い合わせ</a>
+      <a href="#contact">お問い合わせ</a>
     </nav>
     <a class="header-cta" href="https://mond.how/shibatomoko" target="_blank" rel="noopener">Mondで相談</a>
   </header>
@@ -126,14 +126,50 @@
       </div>
     </section>
 
-    <section class="section final-cta">
-      <div class="narrow">
-        <h2>まとまっていなくて、大丈夫です。</h2>
-        <p>今の違和感を、きれいな言葉にする必要はありません。モヤモヤしたまま、止まっているところからで大丈夫です。</p>
-        <div class="button-row">
-          <a class="button primary" href="https://mond.how/shibatomoko" target="_blank" rel="noopener">Mondで匿名相談する</a>
-          <a class="button secondary" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">Substackを読む</a>
+    <section class="section final-cta final-contact-section" id="contact">
+      <div class="final-contact-grid">
+        <div class="final-contact-copy">
+          <h2>まとまっていなくて、大丈夫です。</h2>
+          <p>今の違和感を、きれいな言葉にする必要はありません。モヤモヤしたまま、止まっているところからで大丈夫です。</p>
+          <div class="button-row">
+            <a class="button primary" href="https://mond.how/shibatomoko" target="_blank" rel="noopener">Mondで匿名相談する</a>
+            <a class="button secondary" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener">Substackを読む</a>
+          </div>
         </div>
+        <form class="inquiry-form" data-inquiry-form>
+          <h2>簡単フォーム</h2>
+          <label>
+            <span>お名前</span>
+            <input name="name" type="text" autocomplete="name" placeholder="お名前">
+          </label>
+          <label>
+            <span>メールアドレス</span>
+            <input name="email" type="email" autocomplete="email" placeholder="mail@example.com" required>
+          </label>
+          <fieldset>
+            <legend>近い用件</legend>
+            <div class="inquiry-options">
+              <label><input type="radio" name="topic" value="外部セミナー・登壇" checked><span>外部セミナー・登壇</span></label>
+              <label><input type="radio" name="topic" value="AI活用"><span>AI活用</span></label>
+              <label><input type="radio" name="topic" value="商品づくり・マネタイズ"><span>商品づくり・マネタイズ</span></label>
+              <label><input type="radio" name="topic" value="AIライティング・SNS"><span>AIライティング・SNS</span></label>
+              <label><input type="radio" name="topic" value="業務改善・ツール制作"><span>業務改善・ツール制作</span></label>
+              <label><input type="radio" name="topic" value="行動・発信・仕事の整え方"><span>行動・発信・仕事の整え方</span></label>
+              <label><input type="radio" name="topic" value="個別相談"><span>個別相談</span></label>
+              <label><input type="radio" name="topic" value="その他"><span>その他</span></label>
+            </div>
+          </fieldset>
+          <label>
+            <span>内容</span>
+            <textarea name="message" rows="5" placeholder="まだまとまっていなくても大丈夫です。今の状況、依頼したいこと、気になっていることを書いてください。" required></textarea>
+          </label>
+          <label>
+            <span>希望時期</span>
+            <input name="timing" type="text" placeholder="例：8月ごろ、未定、なるべく早め">
+          </label>
+          <button class="button primary" type="submit">メールを作成する</button>
+          <p class="form-note">送信先: y.n.b12201220@gmail.com</p>
+        </form>
       </div>
     </section>
   </main>
@@ -146,5 +182,6 @@
       <a href="https://x.com/tomo19055918" target="_blank" rel="noopener">X</a>
     </nav>
   </footer>
+  <script src="./inquiry.js"></script>
 </body>
 </html>

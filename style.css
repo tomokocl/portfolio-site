@@ -602,6 +602,37 @@ h3 {
   color: var(--color-muted);
 }
 
+.final-contact-section {
+  padding-top: clamp(72px, 8vw, 112px);
+  scroll-margin-top: 96px;
+}
+
+.final-contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(360px, 0.62fr);
+  gap: clamp(34px, 6vw, 86px);
+  align-items: center;
+}
+
+.final-contact-copy {
+  max-width: 680px;
+  min-width: 0;
+}
+
+.final-contact-copy h2 {
+  max-width: 620px;
+}
+
+.final-contact-copy .button-row {
+  justify-content: flex-start;
+}
+
+.final-contact-section .inquiry-form {
+  background: rgba(255, 253, 248, 0.88);
+  border-color: var(--color-line);
+  box-shadow: none;
+}
+
 .surface-section {
   width: 100%;
   max-width: none;
@@ -871,6 +902,7 @@ h3 {
   .hero,
   .page-hero-visual,
   .mond-hero-grid,
+  .final-contact-grid,
   .split-section {
     grid-template-columns: 1fr;
   }
@@ -1058,6 +1090,14 @@ h3 {
   .statement-section .narrow,
   .final-cta .narrow {
     padding: 0;
+  }
+
+  .final-contact-grid {
+    gap: 30px;
+  }
+
+  .final-contact-section {
+    scroll-margin-top: 150px;
   }
 
   .card {

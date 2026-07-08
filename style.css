@@ -465,7 +465,7 @@ h3 {
   padding-inline: max(18px, calc((100% - var(--max-page)) / 2));
   background:
     linear-gradient(rgba(37, 37, 37, 0.48), rgba(37, 37, 37, 0.62)),
-    url("./assets/tomoko-shiiba/intro-note.png") center / cover;
+    url("./assets/hero-workspace-v2.png") center right / cover;
   color: var(--color-surface);
 }
 

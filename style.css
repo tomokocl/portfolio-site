@@ -244,8 +244,7 @@ h1 {
   max-width: 100%;
 }
 
-.hero-home .phrase,
-.phrase-tight {
+.hero-home .phrase {
   white-space: nowrap;
 }
 
@@ -311,15 +310,14 @@ h3 {
 }
 
 .section {
-  padding: clamp(72px, 9vw, 112px) 0;
-  border-top: 1px solid var(--color-line);
+  padding: clamp(68px, 7.5vw, 96px) 0;
 }
 
 .editorial-intro {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.58fr);
-  gap: clamp(34px, 7vw, 92px);
-  align-items: end;
+  gap: clamp(48px, 8vw, 110px);
+  align-items: center;
 }
 
 .editorial-copy {
@@ -328,8 +326,13 @@ h3 {
 }
 
 .editorial-copy h2 {
-  font-size: clamp(2.35rem, 5.4vw, 4.8rem);
-  line-height: 1.18;
+  max-width: 680px;
+  font-size: clamp(2.35rem, 4.6vw, 3.65rem);
+  line-height: 1.22;
+}
+
+.editorial-copy .prose {
+  margin-top: clamp(22px, 3vw, 34px);
 }
 
 .editorial-image {
@@ -343,25 +346,6 @@ h3 {
   filter: saturate(0.78) contrast(0.96);
 }
 
-.feeling-list {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: clamp(12px, 1.8vw, 22px);
-  margin: clamp(42px, 5vw, 68px) 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.feeling-list li {
-  min-height: 112px;
-  padding: 18px 4px 20px 0;
-  color: var(--color-muted);
-  border-top: 1px solid var(--color-line);
-  font-size: 0.95rem;
-  line-height: 1.75;
-}
-
 .split-section {
   display: grid;
   grid-template-columns: minmax(220px, 0.44fr) minmax(0, 1fr);
@@ -369,7 +353,7 @@ h3 {
 }
 
 .section-heading {
-  max-width: 520px;
+  max-width: 760px;
   min-width: 0;
 }
 
@@ -395,10 +379,8 @@ h3 {
 
 .statement-section .narrow,
 .final-cta .narrow {
-  padding: clamp(34px, 5vw, 62px) 0;
+  padding: 0;
   background: transparent;
-  border-top: 1px solid var(--color-line);
-  border-bottom: 1px solid var(--color-line);
   border-radius: 0;
 }
 
@@ -415,42 +397,33 @@ h3 {
 }
 
 .process-section {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
-  gap: clamp(30px, 6vw, 86px);
+  display: block;
 }
 
 .process-section .section-heading {
-  position: sticky;
-  top: 108px;
-  align-self: start;
+  max-width: 760px;
 }
 
 .process-list {
   display: grid;
-  border-top: 1px solid var(--color-line);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 40px);
+  margin-top: clamp(34px, 5vw, 58px);
 }
 
 .process-list article {
-  display: grid;
-  grid-template-columns: 72px minmax(160px, 0.35fr) minmax(0, 1fr);
-  gap: clamp(18px, 4vw, 54px);
-  padding: 30px 0;
-  border-bottom: 1px solid var(--color-line);
-}
-
-.process-list span {
-  color: var(--color-sub-accent);
-  font-family: var(--font-heading);
+  display: block;
+  padding: 0;
 }
 
 .process-list p {
-  margin: 0;
+  margin: 12px 0 0;
   color: var(--color-muted);
 }
 
 .process-section .note {
-  grid-column: 2;
+  max-width: 780px;
+  margin: clamp(30px, 4vw, 52px) 0 0;
 }
 
 .entrance-section {
@@ -463,41 +436,40 @@ h3 {
   color: var(--color-surface);
 }
 
-.entrance-section .section-heading,
-.entrance-section .kicker {
+.entrance-section .section-heading {
   color: var(--color-surface);
 }
 
 .entrance-list {
   display: grid;
-  margin-top: clamp(34px, 6vw, 78px);
-  border-top: 1px solid rgba(255, 253, 248, 0.5);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 22px);
+  margin-top: clamp(36px, 5vw, 64px);
 }
 
 .entrance-list a {
-  display: grid;
-  grid-template-columns: minmax(100px, 0.2fr) minmax(0, 1fr) auto;
-  gap: clamp(16px, 4vw, 58px);
+  display: flex;
+  gap: 24px;
   align-items: center;
-  min-height: 112px;
-  padding: 26px 0;
-  border-bottom: 1px solid rgba(255, 253, 248, 0.5);
-}
-
-.entrance-list span {
-  color: rgba(255, 253, 248, 0.72);
-  font-size: 0.9rem;
+  justify-content: space-between;
+  min-height: 104px;
+  padding: 24px 26px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.16);
+  backdrop-filter: blur(10px);
 }
 
 .entrance-list strong {
   font-family: var(--font-heading);
-  font-size: clamp(1.6rem, 3.2vw, 3rem);
+  font-size: clamp(1.45rem, 2.2vw, 2.2rem);
   font-weight: 600;
 }
 
 .entrance-list em {
   font-style: normal;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .surface-section > * {
@@ -583,17 +555,17 @@ h3 {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(14px, 2vw, 24px);
+  max-width: 900px;
   margin-top: clamp(24px, 4vw, 44px);
 }
 
 .stats-grid p {
-  min-height: 126px;
   margin: 0;
   padding: 26px;
-  border: 1px solid var(--color-line);
-  background: var(--color-surface);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.72);
 }
 
 .stats-grid strong,
@@ -603,14 +575,15 @@ h3 {
 
 .stats-grid strong {
   font-family: var(--font-heading);
-  font-size: 1.28rem;
+  font-size: 1.38rem;
   font-weight: 600;
 }
 
 .stats-grid span {
   margin-top: 10px;
   color: var(--color-muted);
-  font-size: 0.92rem;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .panel-list,
@@ -698,22 +671,17 @@ h3 {
 
   .card-grid.four,
   .card-grid.three,
-  .stats-grid,
-  .feeling-list {
+  .stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .editorial-intro,
-  .process-section {
+  .editorial-intro {
     grid-template-columns: 1fr;
   }
 
-  .process-section .section-heading {
-    position: static;
-  }
-
-  .process-section .note {
-    grid-column: 1;
+  .process-list {
+    grid-template-columns: 1fr;
+    max-width: 780px;
   }
 }
 
@@ -799,33 +767,20 @@ h3 {
     font-size: clamp(1.95rem, 8.5vw, 2.25rem);
   }
 
-  .feeling-list,
-  .process-list article,
-  .entrance-list a {
+  .process-list,
+  .entrance-list {
     grid-template-columns: 1fr;
   }
 
-  .feeling-list {
-    gap: 12px;
-  }
-
-  .feeling-list li {
-    min-height: auto;
-    padding: 16px 0 14px;
-  }
-
-  .process-list article {
-    gap: 10px;
-    padding: 24px 0;
-  }
-
   .entrance-list a {
+    flex-direction: column;
     gap: 8px;
+    align-items: flex-start;
     min-height: auto;
   }
 
   .entrance-list strong {
-    font-size: clamp(1.9rem, 11vw, 3rem);
+    font-size: clamp(1.45rem, 7vw, 1.9rem);
   }
 
   .card-grid.four,
@@ -838,7 +793,7 @@ h3 {
 
   .statement-section .narrow,
   .final-cta .narrow {
-    padding: 34px 0;
+    padding: 0;
   }
 
   .card {

@@ -17,7 +17,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="site-brand" href="./index.html">椎葉ともこ</a>
+    <a class="site-brand" href="./index.html">トップへ戻る</a>
     <nav class="site-nav" aria-label="主要ナビゲーション">
       <a href="./about.html">プロフィール</a>
       <a href="./session.html">個別相談</a>
@@ -30,11 +30,46 @@
   </header>
 
   <main>
-    <section class="page-hero page-hero-visual">
-      <div class="page-hero-copy">
-        <h1><span class="phrase">まとまらなくても</span><span class="phrase">大丈夫です。</span><span class="phrase">そのまま送れます。</span></h1>
-        <p>名前を出さなくても大丈夫です。きれいな文章にしなくても大丈夫です。今の引っかかりを、そのまま置いてください。</p>
-        <a class="button primary" href="https://mond.how/shibatomoko" target="_blank" rel="noopener">Mondで送ってみる</a>
+    <section class="page-hero page-hero-visual mond-hero">
+      <div class="mond-hero-grid">
+        <div class="page-hero-copy">
+          <h1><span class="phrase">まとまらなくても</span><span class="phrase">大丈夫です。</span><span class="phrase">そのまま送れます。</span></h1>
+          <p>返信が必要な相談や依頼は、右のフォームから送れます。匿名で置いておきたい内容は、Mondも使えます。</p>
+        </div>
+        <form class="inquiry-form" data-inquiry-form>
+          <h2>簡単フォーム</h2>
+          <label>
+            <span>お名前</span>
+            <input name="name" type="text" autocomplete="name" placeholder="お名前">
+          </label>
+          <label>
+            <span>メールアドレス</span>
+            <input name="email" type="email" autocomplete="email" placeholder="mail@example.com" required>
+          </label>
+          <fieldset>
+            <legend>近い用件</legend>
+            <div class="inquiry-options">
+              <label><input type="radio" name="topic" value="外部セミナー・登壇" checked><span>外部セミナー・登壇</span></label>
+              <label><input type="radio" name="topic" value="AI活用"><span>AI活用</span></label>
+              <label><input type="radio" name="topic" value="商品づくり・マネタイズ"><span>商品づくり・マネタイズ</span></label>
+              <label><input type="radio" name="topic" value="AIライティング・SNS"><span>AIライティング・SNS</span></label>
+              <label><input type="radio" name="topic" value="業務改善・ツール制作"><span>業務改善・ツール制作</span></label>
+              <label><input type="radio" name="topic" value="行動・発信・仕事の整え方"><span>行動・発信・仕事の整え方</span></label>
+              <label><input type="radio" name="topic" value="個別相談"><span>個別相談</span></label>
+              <label><input type="radio" name="topic" value="その他"><span>その他</span></label>
+            </div>
+          </fieldset>
+          <label>
+            <span>内容</span>
+            <textarea name="message" rows="5" placeholder="まだまとまっていなくても大丈夫です。今の状況、依頼したいこと、気になっていることを書いてください。" required></textarea>
+          </label>
+          <label>
+            <span>希望時期</span>
+            <input name="timing" type="text" placeholder="例：8月ごろ、未定、なるべく早め">
+          </label>
+          <button class="button primary" type="submit">メールを作成する</button>
+          <p class="form-note">送信先: y.n.b12201220@gmail.com</p>
+        </form>
       </div>
       <figure class="page-hero-image">
         <img src="./assets/mond-visual.png" alt="スマートフォンとノートが置かれた静かな机">
@@ -84,5 +119,6 @@
       <a href="./contact.html">お問い合わせ</a>
     </nav>
   </footer>
+  <script src="./inquiry.js"></script>
 </body>
 </html>

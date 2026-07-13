@@ -71,6 +71,10 @@ h3 {
   color: var(--color-ink);
   font-weight: 700;
   letter-spacing: -0.04em;
+  line-break: strict;
+  overflow-wrap: normal;
+  text-wrap: balance;
+  word-break: auto-phrase;
 }
 
 h1 {
@@ -214,6 +218,11 @@ strong {
 }
 
 @media (max-width: 600px) {
+  h1 > br,
+  h2 > br {
+    display: none;
+  }
+
   .container {
     width: min(calc(100% - (var(--gutter-mobile) * 2)), var(--container-max));
   }

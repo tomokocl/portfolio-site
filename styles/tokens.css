@@ -12,8 +12,8 @@
   --color-muted: #667078;
   --color-cream: #f7efdc;
   --color-line: rgba(28, 34, 57, 0.16);
-  --font-sans: "Zen Kaku Gothic New", "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif: "Noto Serif JP", serif;
+  --font-sans: "Zen Kaku Gothic New", "Noto Sans JP", "Yu Gothic UI", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, sans-serif;
+  --font-serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
   --font-hero: clamp(3.25rem, 7vw, 7rem);
   --font-h2: clamp(2.25rem, 4.7vw, 4.75rem);
   --font-h3: clamp(1.35rem, 2vw, 2rem);

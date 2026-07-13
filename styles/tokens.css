@@ -1,0 +1,35 @@
+:root {
+  --color-ink: #1c2239;
+  --color-deep-teal: #2e5866;
+  --color-aqua: #8acdc2;
+  --color-teal: #369999;
+  --color-coral: #cc3c59;
+  --color-coral-bright: #e85a70;
+  --color-cloud: #f4f8f5;
+  --color-blossom: #e5b7b2;
+  --color-white: #ffffff;
+  --color-text: #25272d;
+  --color-muted: #667078;
+  --color-cream: #f7efdc;
+  --color-line: rgba(28, 34, 57, 0.16);
+  --font-sans: "Zen Kaku Gothic New", "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: "Noto Serif JP", serif;
+  --font-hero: clamp(3.25rem, 7vw, 7rem);
+  --font-h2: clamp(2.25rem, 4.7vw, 4.75rem);
+  --font-h3: clamp(1.35rem, 2vw, 2rem);
+  --font-body-lg: clamp(1.05rem, 1.4vw, 1.25rem);
+  --font-body: 1rem;
+  --font-small: 0.875rem;
+  --container-max: 1280px;
+  --content-max: 760px;
+  --gutter-desktop: 40px;
+  --gutter-tablet: 28px;
+  --gutter-mobile: 20px;
+  --section-space-desktop: 128px;
+  --section-space-tablet: 88px;
+  --section-space-mobile: 64px;
+  --radius-sm: 16px;
+  --radius-md: 22px;
+  --radius-lg: 28px;
+  --header-height: 72px;
+}

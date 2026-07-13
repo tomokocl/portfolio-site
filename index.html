@@ -3,222 +3,98 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>椎葉ともこ｜AI研修・講師・法人向け伴走支援</title>
-  <meta name="description" content="AI研修・講師、AIライティング、SNS発信、業務改善・ツール制作を、現場で動ける形に整えます。AI講師としてのべ5,000人以上を支援してきた椎葉ともこの公式サイトです。">
+  <title>椎葉ともこ｜AI時代に伝わる人を育てる</title>
+  <meta name="description" content="AIが作る時代、人間は伝える力で差がつく。得意や経験を言葉にし、AIで発信・商品・仕事の最初の成果へ。SHIFT AI特別講師・椎葉ともこの公式サイト。">
+  <meta name="theme-color" content="#1C2239">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="椎葉ともこ｜言葉・AI・仕組みを、動ける形に整える">
-  <meta property="og:description" content="AI研修・講師、発信、業務改善を、現場で使える形に整えます。">
-  <meta property="og:image" content="./assets/portfolio-og-corporate.png">
+  <meta property="og:title" content="椎葉ともこ｜AI時代に伝わる人を育てる">
+  <meta property="og:description" content="AIが作る時代、人間は伝える力で差がつく。得意や経験を言葉にし、AIで発信・商品・仕事の最初の成果へ。">
+  <meta property="og:url" content="https://tomokocl.github.io/portfolio-site/">
+  <meta property="og:image" content="https://tomokocl.github.io/portfolio-site/assets/og/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234E7D72'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='28' fill='white' font-family='serif'%3E椎%3C/text%3E%3C/svg%3E">
+  <meta name="twitter:image" content="https://tomokocl.github.io/portfolio-site/assets/og/og-default.png">
+  <link rel="icon" href="./assets/brand/shiiba-avatar-thumb.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/tokens.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/components.css">
+  <link rel="stylesheet" href="./styles/pages.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "椎葉ともこ",
+    "url": "https://tomokocl.github.io/portfolio-site/",
+    "image": "https://tomokocl.github.io/portfolio-site/assets/brand/shiiba-avatar-square.webp",
+    "jobTitle": "AI講師・教育者",
+    "description": "AI時代に必要な伝える力を、言語化・AI実装・認知の転換まで通して育てる。",
+    "sameAs": ["https://substack.com/@shiibatomoko", "https://x.com/tomo19055918", "https://stand.fm/channels/66814520b3df431386ba6bda"],
+    "knowsAbout": ["生成AI", "言語化", "コンテキスト設計", "発信設計", "商品設計", "AI人材育成"]
+  }
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="site-brand" href="./index.html">椎葉ともこ</a>
-    <nav class="site-nav" aria-label="主要ナビゲーション">
-      <a href="#services">できること</a>
-      <a href="#proof">実績</a>
-      <a href="./about.html">プロフィール</a>
-      <a href="#media">発信</a>
-      <a href="./mond.html">Mond相談</a>
-    </nav>
-    <a class="header-cta" href="#contact">法人のお問い合わせ</a>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="site-brand" href="./index.html" aria-label="椎葉ともこ トップページ">TOMOKO SHIIBA</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く" data-nav-toggle><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="主要ナビゲーション" data-nav>
+        <a href="#method">メソッド</a><a href="./programs.html">プログラム</a><a href="#proof">実績・変化</a><a href="#research">研究・読みもの</a><a href="./about.html">プロフィール</a><a href="./corporate.html">法人向け</a><a class="button button--coral" href="./contact.html">相談する</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero hero-home">
-      <div class="hero-text">
-        <p class="kicker">AI TRAINING / CONTENT / WORKFLOW</p>
-        <h1>
-          <span class="hero-title-line">言葉・AI・仕組みを、</span>
-          <span class="hero-title-line">動ける形に整える。</span>
-        </h1>
-        <p class="lead">AI研修・講師、AIライティング、SNS発信、業務改善。新しいツールを紹介して終わるのではなく、現場で無理なく使い続けられる形まで一緒に整えます。</p>
-        <div class="button-row">
-          <a class="button primary" href="#contact">講師・法人案件を相談する</a>
-          <a class="button secondary" href="#proof">実績を見る</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="hero__eyebrow">椎葉ともこ｜AI時代に伝わる人を育てる</p>
+          <h1 id="hero-title">AIが作る時代、<br>人間は<span class="text-aqua">「伝える力」</span>で<br>差がつく。</h1>
+          <p class="hero__lead">得意や経験を言葉にし、AIへ文脈を渡し、<br>発信・商品・仕事の最初の成果へ。</p>
+          <p class="hero__support">AIの使い方だけでなく、方法を知っているのに動けないときは、思い込みや認知も含めて整えます。</p>
+          <div class="button-row"><a class="button button--coral" href="./programs.html">プログラムを見る</a><a class="button button--outline" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">考え方を読む</a></div>
         </div>
-        <p class="hero-subroute">個人のモヤモヤや、まだ言葉になっていない相談は <a href="./mond.html">Mondへ →</a></p>
-      </div>
-      <figure class="hero-image">
-        <img src="./assets/tomoko-shiiba/hero-editorial-v2.png" alt="静かな仕事場で言葉とAIの設計に向き合う女性">
-      </figure>
-    </section>
-
-    <section class="section business-intro">
-      <div class="section-heading">
-        <p class="section-kicker">FOR BUSINESS</p>
-        <h2>AIを導入する前に、<br>「何を変えたいか」から整理する。</h2>
-      </div>
-      <div class="prose business-intro-copy">
-        <p>AIの機能は増え続けています。でも、現場で必要なのはツールの知識だけではありません。</p>
-        <p>誰が、何のために、どの業務で使うのか。受講者やチームの状況を言葉にし、無理なく試せる単位に分けることで、研修や仕組みを「使われる形」にしていきます。</p>
-      </div>
-    </section>
-
-    <section class="section surface-section service-section" id="services">
-      <div class="section-heading">
-        <p class="section-kicker">SERVICES</p>
-        <h2>ご依頼いただけること</h2>
-        <p class="section-lead">内容がまだ固まっていなくても大丈夫です。目的と現在地を伺い、必要な範囲から設計します。</p>
-      </div>
-      <div class="card-grid four service-grid">
-        <article class="card">
-          <span class="card-label">01</span>
-          <h3>AI研修・講師</h3>
-          <p>初心者向けの生成AI基礎から、発信・業務活用まで。参加者の理解度と目的に合わせて講座を設計します。</p>
-        </article>
-        <article class="card">
-          <span class="card-label">02</span>
-          <h3>AIライティング・SNS</h3>
-          <p>発信軸、企画、文章作成、運用フローを整理し、AIを使って継続できる形へ整えます。</p>
-        </article>
-        <article class="card">
-          <span class="card-label">03</span>
-          <h3>業務改善・ツール制作</h3>
-          <p>繰り返し作業や情報共有の詰まりを整理し、小さな自動化やツールの設計・制作につなげます。</p>
-        </article>
-        <article class="card">
-          <span class="card-label">04</span>
-          <h3>商品・コンテンツ設計</h3>
-          <p>経験や知識を棚卸しし、講座・教材・発信コンテンツとして届けられる構造にまとめます。</p>
-        </article>
-      </div>
-      <p class="section-link"><a href="./ai-support.html">AI活用支援について詳しく見る →</a></p>
-    </section>
-
-    <section class="section request-section">
-      <div class="section-heading">
-        <p class="section-kicker">CONSULTATION EXAMPLES</p>
-        <h2>こんな段階から相談できます。</h2>
-      </div>
-      <div class="request-list">
-        <p><strong>社内向けのAI研修をしたい</strong><span>対象者や到達点がまだ曖昧な段階から、内容と進め方を組み立てます。</span></p>
-        <p><strong>AIを発信や業務に取り入れたい</strong><span>ツール選びの前に、現在の作業と詰まりを整理し、試す順番を決めます。</span></p>
-        <p><strong>知識を講座や教材にしたい</strong><span>頭の中にある素材を棚卸しし、相手に伝わる構成と言葉に変えます。</span></p>
-        <p><strong>依頼内容そのものを整理したい</strong><span>「何を頼めばいいかわからない」状態から、必要な支援範囲を一緒に見つけます。</span></p>
-      </div>
-    </section>
-
-    <section class="section trust-section" id="proof">
-      <div class="section-heading">
-        <p class="section-kicker">EXPERIENCE</p>
-        <h2>伝える現場と、動かす現場の両方を経験してきました。</h2>
-      </div>
-      <div class="stats-grid">
-        <p><strong>AI講師として3年</strong><span>初心者にもわかりやすく伝える講座経験</span></p>
-        <p><strong>のべ5,000人以上</strong><span>生成AI・AI活用を指導してきた実績</span></p>
-        <p><strong>3万人規模</strong><span>AIコミュニティの運営に携わった経験</span></p>
-        <p><strong>企画から実装まで</strong><span>講座、教材、発信、業務改善ツールを横断して支援</span></p>
-      </div>
-      <div class="proof-links">
-        <a href="./about.html">プロフィールを見る</a>
-        <a href="./ai-support.html">AI活用支援を見る</a>
-      </div>
-    </section>
-
-    <section class="section process-section">
-      <div class="section-heading">
-        <p class="section-kicker">APPROACH</p>
-        <h2>相談から、実装前の設計まで。</h2>
-      </div>
-      <div class="process-list">
-        <article>
-          <span>01</span>
-          <h3>目的を言葉にする</h3>
-          <p>背景、対象者、困っていることを伺い、本当に変えたい状態を明確にします。</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>必要な要素を切り分ける</h3>
-          <p>研修、発信、業務、ツールなど、混ざっている課題を整理して優先順位をつけます。</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>動ける単位に設計する</h3>
-          <p>企画書、講座構成、運用フローなど、次に実行できる具体的な形へ落とし込みます。</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section entrance-section" id="media">
-      <div class="section-heading">
-        <p class="section-kicker light">MEDIA &amp; PERSONAL CONSULTATION</p>
-        <h2>考え方を知る。個人で相談する。</h2>
-      </div>
-      <div class="media-grid">
-        <div class="media-panel">
-          <p class="media-label">発信を読む・聴く</p>
-          <div class="entrance-list media-links">
-            <a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener"><strong>Substack</strong><em>文章を読む</em></a>
-            <a href="https://stand.fm/channels/66814520b3df431386ba6bda" target="_blank" rel="noopener"><strong>stand.fm</strong><em>声で聴く</em></a>
-            <a href="https://x.com/tomo19055918" target="_blank" rel="noopener"><strong>X</strong><em>日々の発信を見る</em></a>
-          </div>
+        <div class="hero__visual reveal" aria-label="経験が言葉とAIを通して現実の成果へ変わる流れ">
+          <div class="hero__image-wrap"><picture><source srcset="./assets/brand/shiiba-avatar-square.webp" type="image/webp"><img class="hero__avatar" src="./assets/brand/shiiba-avatar-source.jpg" width="400" height="400" alt="黒髪の横顔と、青緑・赤の線で表された人間とAIのつながり" fetchpriority="high"></picture></div>
+          <span class="signal-label signal-label--experience">EXPERIENCE</span><span class="signal-label signal-label--words">WORDS</span><span class="signal-label signal-label--context">CONTEXT</span><span class="signal-label signal-label--ai">AI</span><span class="signal-label signal-label--reality">REALITY</span>
         </div>
-        <aside class="mond-panel">
-          <p class="media-label">個人の方へ</p>
-          <h3>まだ言葉になっていないモヤモヤは、Mondへ。</h3>
-          <p>仕事の依頼ではなく、自分の気持ちや考えを整理したい方のための匿名相談窓口です。</p>
-          <a class="button mond-button" href="./mond.html">Mond相談について見る</a>
-        </aside>
       </div>
     </section>
 
-    <section class="section final-cta final-contact-section" id="contact">
-      <div class="final-contact-grid">
-        <div class="final-contact-copy">
-          <p class="section-kicker">CONTACT</p>
-          <h2>講師・研修・AI活用のご相談</h2>
-          <p>ご希望の内容、対象者、実施時期など、決まっている範囲でお知らせください。</p>
-          <p class="contact-note">フォーム送信後、メールアプリが開きます。</p>
-        </div>
-        <form class="inquiry-form" data-inquiry-form>
-          <h2>お問い合わせ内容</h2>
-          <label>
-            <span>お名前・会社名</span>
-            <input name="name" type="text" autocomplete="name" placeholder="例：株式会社〇〇　山田様">
-          </label>
-          <label>
-            <span>メールアドレス</span>
-            <input name="email" type="email" autocomplete="email" placeholder="mail@example.com" required>
-          </label>
-          <fieldset>
-            <legend>近い用件</legend>
-            <div class="inquiry-options">
-              <label><input type="radio" name="topic" value="AI研修・講師・登壇" checked><span>AI研修・講師・登壇</span></label>
-              <label><input type="radio" name="topic" value="AIライティング・SNS"><span>AIライティング・SNS</span></label>
-              <label><input type="radio" name="topic" value="業務改善・ツール制作"><span>業務改善・ツール制作</span></label>
-              <label><input type="radio" name="topic" value="商品・コンテンツ設計"><span>商品・コンテンツ設計</span></label>
-              <label><input type="radio" name="topic" value="その他"><span>その他</span></label>
-            </div>
-          </fieldset>
-          <label>
-            <span>内容</span>
-            <textarea name="message" rows="5" placeholder="ご希望の内容、対象者、目的、現在の課題などをご記入ください。" required></textarea>
-          </label>
-          <label>
-            <span>希望時期</span>
-            <input name="timing" type="text" placeholder="例：8月ごろ、未定、なるべく早め">
-          </label>
-          <button class="button primary" type="submit">相談メールを作成する</button>
-        </form>
-      </div>
-    </section>
+    <section class="trust-bar" aria-label="主な実績"><div class="container trust-bar__grid"><div class="trust-item"><strong>SHIFT AI</strong><span>特別講師</span></div><div class="trust-item"><strong>5,000人超</strong><span>受講生への指導経験</span></div><div class="trust-item"><strong>3万人規模</strong><span>発信・運用経験</span></div><div class="trust-item"><strong>0 → 1</strong><span>非エンジニアからツール開発</span></div></div></section>
+
+    <section class="section problem" aria-labelledby="problem-title"><div class="container">
+      <div class="problem__heading reveal"><div><p class="section-label">WHERE YOU ARE</p><h2 id="problem-title">AIを学んだ。<br>でも、まだ形になっていない。</h2></div><p class="section-intro">新しいツールを覚えても、仕事や発信が自然に生まれるわけではありません。止まっている場所は、AIの外側にあることがあります。</p></div>
+      <div class="problem-grid"><article class="card problem-card reveal"><span class="card-number">01</span><h3>何を発信すればいいか決まらない</h3><p>知識は増えたのに、自分が誰に何を届ける人なのかが言葉になっていない。</p></article><article class="card problem-card reveal"><span class="card-number">02</span><h3>AIの文章が、自分の言葉に感じられない</h3><p>AIに渡す文脈や判断基準がなく、出力がどこか他人のように見える。</p></article><article class="card problem-card reveal"><span class="card-number">03</span><h3>経験を商品や仕事へ変えられない</h3><p>できることはある。でも、相手にとっての価値として伝えられていない。</p></article><article class="card problem-card reveal"><span class="card-number">04</span><h3>投稿・販売・価格提示の直前で止まる</h3><p>方法は分かっているのに、「まだ早い」「私には無理」が繰り返し出てくる。</p></article></div>
+    </div></section>
+
+    <section class="core-statement" aria-label="ブランドの中心となる考え方"><div class="container reveal"><p class="core-statement__copy">AIを使えるだけでは、選ばれない。<br><br>何をつくるか。<br>誰に届けるか。<br>どの言葉を選ぶか。<br><br>人間側の<strong>「伝える力」</strong>が、<br>AIを仕事に変える。</p></div></section>
+
+    <section class="section method" id="method" aria-labelledby="method-title"><div class="container">
+      <p class="section-label">THE METHOD</p><h2 id="method-title">伝わる人は、<br>4つの力を行き来できる。</h2>
+      <div class="method-grid reveal"><article class="method-step"><span class="method-step__en">01 DISCOVER</span><h3>見つける</h3><p>経験、得意、違和感、願いを拾い、自分が持っている材料を見つける。</p></article><article class="method-step"><span class="method-step__en">02 WORDS</span><h3>言葉にする</h3><p>自分にも相手にも分かる言葉へ変え、誰に何を届けるかを定める。</p></article><article class="method-step"><span class="method-step__en">03 CONTEXT</span><h3>AIへ渡す</h3><p>背景、目的、判断基準をAIへ渡し、自分の意図に沿う出力をつくる。</p></article><article class="method-step"><span class="method-step__en">04 REALITY</span><h3>現実にする</h3><p>投稿、商品、サービス、業務改善など、最初の成果として外へ出す。</p></article></div>
+      <div class="inner-shift reveal"><strong>INNER SHIFT<br>動きを止める認知を整える</strong><p>「見られるのが怖い」「まだ早い」「価値を受け取れない」。技術だけでは進めないときは、行動を止める思い込みや認知も扱います。</p></div>
+    </div></section>
+
+    <section class="section outcomes" aria-labelledby="outcomes-title"><div class="container"><p class="section-label">THE FIRST REALITY</p><h2 id="outcomes-title">目指すのは、知識ではなく<br><span class="serif">「最初の現実」。</span></h2><p class="section-intro">0→1とは、大きな事業を立ち上げることだけではありません。自分の言葉が初めて外へ出て、誰かとつながる瞬間です。</p><div class="outcomes-track reveal"><article class="outcome"><span class="outcome__en">FIRST POST</span><h3>最初の投稿</h3><p>止まっていた発信を、自分の言葉で公開する。</p></article><article class="outcome"><span class="outcome__en">FIRST OFFER</span><h3>最初の商品</h3><p>経験を、相手が選べるサービスとして形にする。</p></article><article class="outcome"><span class="outcome__en">FIRST TALK</span><h3>最初の相談</h3><p>発信した言葉から、誰かとの対話が生まれる。</p></article><article class="outcome"><span class="outcome__en">FIRST REQUEST</span><h3>最初の依頼</h3><p>得意や経験が、仕事として必要とされる。</p></article><article class="outcome"><span class="outcome__en">FIRST CHANGE</span><h3>最初の業務改善</h3><p>AIを使い、日々の仕事を一つ動かす。</p></article></div></div></section>
+
+    <section class="section programs" aria-labelledby="programs-title"><div class="container"><p class="section-label">PROGRAMS</p><h2 id="programs-title">いま必要な段階から、始める。</h2><p class="section-intro">その人の代わりに作り続けるのではなく、本人が自分で言葉・AI・認知を扱える状態へ育てます。</p><div class="program-grid"><article class="card program-card reveal"><span class="status-pill">A / WORDS</span><div><h3>言葉にする</h3><p>得意、発信軸、商品テーマが曖昧な人へ。壁打ちと言語化を通して、自分が何を届ける人なのかを整理します。</p></div><a class="arrow-link" href="./programs.html#words">この段階を見る</a></article><article class="card program-card reveal"><span class="status-pill">B / 0→1</span><div><h3>最初の形をつくる</h3><p>AIを学んだが、投稿・商品・仕事まで進めない人へ。言語化、AI活用、発信・商品設計をつなぎ、最初の成果まで伴走します。</p></div><a class="arrow-link" href="./programs.html#first-reality">主力プログラムを見る</a></article><article class="card program-card reveal"><span class="status-pill">C / INNER SHIFT</span><div><h3>認知を切り替える</h3><p>方法は分かっているのに、同じ場所で止まり続ける人へ。思い込みや認知を特定し、現実で選べる状態へ整えます。</p></div><a class="arrow-link" href="./programs.html#inner-shift">この段階を見る</a></article><article class="card program-card reveal"><div><span class="status-pill">D / SCHOOL</span><h3>自分でできる力を育てる</h3></div><div><p>言葉・AI・認知を、自分で扱えるようになりたい人へ。講座またはスクール形式で、継続的に0→1をつくる基礎力を育てます。</p><a class="arrow-link" href="./programs.html#self-reliance">詳しく見る</a></div></article></div><p style="margin-top: 28px"><a class="button button--ink" href="./programs.html">プログラムを詳しく見る</a></p></div></section>
+
+    <section class="section proof" id="proof" aria-labelledby="proof-title"><div class="container proof-layout"><div class="reveal"><p class="section-label">PROOF & PRACTICE</p><h2 id="proof-title">伝える現場と、<br>動かす現場の両方を経験してきた。</h2><p class="section-intro">言葉、講座、発信、商品、業務、ツール。企画だけで終わらず、現実に使われるところまで横断してきました。</p></div><div class="reveal"><div class="proof-stats"><div class="proof-stat"><strong>3年</strong><span>AI講師としての講座経験</span></div><div class="proof-stat"><strong>5,000人超</strong><span>生成AI・AI活用を指導</span></div><div class="proof-stat"><strong>3万人規模</strong><span>発信・運用の現場</span></div><div class="proof-stat"><strong>企画 → 実装</strong><span>教材・発信・ツールを横断</span></div></div><article class="proof-case"><h3>非エンジニアから、AI講師・教材設計・ツール開発へ。</h3><dl><div><dt>BEFORE</dt><dd>専門外からの出発</dd></div><div><dt>WORDS</dt><dd>経験と得意を言語化</dd></div><div><dt>AI</dt><dd>文脈と目的を設計</dd></div><div><dt>ACTION</dt><dd>講座・教材・ツールへ</dd></div><div><dt>RESULT</dt><dd>AI時代の教育と0→1支援へ再編集</dd></div></dl></article></div></div></section>
+
+    <section class="section brand-story" aria-labelledby="story-title"><div class="container story-layout"><div class="story-visual reveal" aria-hidden="true"><small>HUMAN SIGNAL</small><p class="story-fragment">人間の感覚<br>↓<br>言葉<br>↓<br>AIへの文脈<br>↓<br>現実の成果</p></div><div class="story-copy reveal"><p class="section-label">BRAND STORY</p><h2 id="story-title">私自身も、<br>40代・非エンジニアから始めた。</h2><p>Webライター、Instagram運用、講師、教材設計、AI活用支援、ツール開発。一見ばらばらに見える経験をつないだ時、私の強みは「まだ言葉になっていないものを、伝わる形へ変えること」だと分かりました。</p><p>AIは、経験を仕事へ変える大きな道具になります。でも、本人の中にあるものが言葉になっていなければ、AIへ渡すことも、相手へ届けることもできません。</p><p class="serif">だから私は、AIの使い方だけでなく、言葉、伝え方、実装、そして必要な時には認知まで扱います。</p><a class="button button--ink" href="./about.html">プロフィールを読む</a></div></div></section>
+
+    <section class="section research" id="research" aria-labelledby="research-title"><div class="container"><div class="research-head reveal"><div><p class="section-label">RESEARCH & NOTES</p><h2 id="research-title">AI時代の人間を、<br>実験しながら考える。</h2></div><div class="research-links"><a href="https://x.com/tomo19055918" target="_blank" rel="noopener noreferrer">X</a><a href="https://stand.fm/channels/66814520b3df431386ba6bda" target="_blank" rel="noopener noreferrer">stand.fm</a></div></div><div class="research-grid"><article class="card research-card reveal"><div class="research-card__meta"><span>AI時代の伝える力</span><span>SUBSTACK</span></div><h3>AIが作る時代、なぜ「伝える力」が仕事を作るのか</h3><p>AIを使えるだけでは成果が出ない理由と、人間側に残る役割を考えます。</p><a class="arrow-link" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">Substackで読む</a></article><article class="card research-card reveal"><div class="research-card__meta"><span>認知と仕事</span><span>RESEARCH</span></div><h3>AIツールだけではAI人材になれない。</h3><p>準備だけを高速化してしまう時、人間側では何が起きているのかを検証します。</p><a class="arrow-link" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">Substackへ</a></article><article class="card research-card reveal"><div class="research-card__meta"><span>40代からのAIキャリア</span><span>RESEARCH</span></div><h3>40代からの変化は、ゼロからではなく再編集でいい。</h3><p>これまでの経験を、AI時代の発信・商品・仕事へつなぎ直します。</p><a class="arrow-link" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">Substackへ</a></article></div></div></section>
+
+    <section class="section corporate-band" aria-labelledby="corporate-title"><div class="container corporate-band__grid reveal"><div><p class="section-label">FOR ORGANIZATIONS</p><h2 id="corporate-title">組織の中に、<br>AIを使って伝えられる人を育てる。</h2><p>生成AIの操作だけではなく、問い、言語化、文脈、判断、発信、実装まで。受講者やチームの現在地に合わせて、研修・講座・教材を設計します。</p></div><p><a class="button button--aqua" href="./corporate.html">法人・研修について見る</a></p></div></section>
+
+    <section class="section final-cta" aria-labelledby="final-title"><div class="container reveal"><p class="section-label">START FROM HERE</p><h2 id="final-title">あなたの経験を、<br>伝わる最初の形にする。</h2><p>何を頼めばいいか決まっていなくても大丈夫です。いま止まっている場所から、必要な一歩を整理します。</p><div class="button-row"><a class="button button--coral" href="./contact.html">相談する</a><a class="button button--outline" href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">まずは記事を読む</a></div></div></section>
   </main>
 
-  <footer class="site-footer">
-    <small>&copy; 2026 Tomoko Shiiba</small>
-    <nav aria-label="フッターリンク">
-      <a href="./about.html">プロフィール</a>
-      <a href="./ai-support.html">AI活用支援</a>
-      <a href="./session.html">個別相談</a>
-      <a href="./mond.html">Mond相談</a>
-    </nav>
-  </footer>
-  <script src="./inquiry.js"></script>
+  <footer class="site-footer"><div class="container site-footer__inner"><div class="site-footer__identity"><p class="site-footer__brand">TOMOKO SHIIBA</p><p class="site-footer__statement">AIが作る時代、人間は「伝える力」で差がつく。</p></div><div><h2>EXPLORE</h2><nav aria-label="サイト内リンク"><a href="#method">メソッド</a><a href="./programs.html">プログラム</a><a href="#proof">実績・変化</a><a href="./about.html">プロフィール</a><a href="./corporate.html">法人向け</a><a href="./contact.html">相談する</a></nav></div><div><h2>FOLLOW</h2><nav aria-label="外部リンク"><a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">Substack</a><a href="https://x.com/tomo19055918" target="_blank" rel="noopener noreferrer">X</a><a href="https://stand.fm/channels/66814520b3df431386ba6bda" target="_blank" rel="noopener noreferrer">stand.fm</a></nav></div></div><div class="container site-footer__bottom"><span>© <span data-current-year>2026</span> Tomoko Shiiba</span><span>BUILDING PEOPLE WHO COMMUNICATE IN THE AI ERA</span></div></footer>
+  <script src="./scripts/main.js" defer></script>
 </body>
 </html>

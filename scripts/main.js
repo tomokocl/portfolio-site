@@ -107,14 +107,41 @@
 
   document.querySelectorAll("[data-corporate-form]").forEach((form) => {
     const fallback = form.closest("[data-form-shell]")?.querySelector("[data-form-fallback]");
-    if (!config.corporateFormUrl) {
+    if (config.corporateFormUrl) {
+      form.action = config.corporateFormUrl;
+      form.hidden = false;
+      if (fallback) fallback.hidden = true;
+      return;
+    }
+
+    if (!config.corporateEmail) {
       form.hidden = true;
       if (fallback) fallback.hidden = false;
       return;
     }
-    form.action = config.corporateFormUrl;
+
     form.hidden = false;
     if (fallback) fallback.hidden = true;
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const values = [
+        ["会社・組織名", "company"],
+        ["担当者名", "name"],
+        ["メールアドレス", "email"],
+        ["相談種別", "topic"],
+        ["対象者・人数", "audience"],
+        ["希望時期", "timing"],
+        ["予算帯", "budget"],
+        ["相談内容", "message"]
+      ];
+      const body = [
+        "法人・プロジェクトについて相談します。",
+        "",
+        ...values.map(([label, name]) => `${label}：${String(data.get(name) || "").trim()}`)
+      ].join("\n");
+      window.location.href = `mailto:${config.corporateEmail}?subject=${encodeURIComponent(corporateSubject)}&body=${encodeURIComponent(body)}`;
+    });
   });
 
   const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -156,36 +183,4 @@
     });
   });
 
-  const hero = document.querySelector("[data-hero]");
-  const portrait = document.querySelector("[data-hero-portrait]");
-  if (hero && portrait && !reducedMotion && window.matchMedia("(pointer: fine)").matches) {
-    let pointerFrame = 0;
-    let scrollFrame = 0;
-    hero.addEventListener("pointermove", (event) => {
-      if (window.innerWidth <= 900) return;
-      cancelAnimationFrame(pointerFrame);
-      pointerFrame = requestAnimationFrame(() => {
-        const rect = hero.getBoundingClientRect();
-        const x = ((event.clientX - rect.left) / rect.width - 0.5) * 16;
-        const y = ((event.clientY - rect.top) / rect.height - 0.5) * 16;
-        portrait.style.setProperty("--hero-x", `${x.toFixed(2)}px`);
-        portrait.style.setProperty("--hero-y", `${y.toFixed(2)}px`);
-      });
-    });
-    hero.addEventListener("pointerleave", () => {
-      portrait.style.setProperty("--hero-x", "0px");
-      portrait.style.setProperty("--hero-y", "0px");
-    });
-    window.addEventListener("scroll", () => {
-      cancelAnimationFrame(scrollFrame);
-      scrollFrame = requestAnimationFrame(() => {
-        const progress = Math.min(Math.max(window.scrollY / Math.max(hero.offsetHeight, 1), 0), 1);
-        portrait.style.setProperty("--hero-scale", (1 + progress * 0.04).toFixed(3));
-      });
-    }, { passive: true });
-  }
-
-  document.addEventListener("visibilitychange", () => {
-    document.documentElement.classList.toggle("is-page-hidden", document.hidden);
-  });
 })();

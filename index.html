@@ -17,8 +17,8 @@
   <link rel="icon" href="./assets/brand/shiiba-avatar-thumb.webp" type="image/webp">
   <link rel="stylesheet" href="./styles/tokens.css">
   <link rel="stylesheet" href="./styles/base.css">
-  <link rel="stylesheet" href="./styles/components.css">
-  <link rel="stylesheet" href="./styles/pages.css">
+  <link rel="stylesheet" href="./styles/components.css?v=20260713-visibility">
+  <link rel="stylesheet" href="./styles/pages.css?v=20260713-visibility">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -56,7 +56,7 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く" data-nav-toggle><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="主要ナビゲーション" data-nav>
         <p class="site-nav__descriptor">椎葉ともこ｜AI時代に伝わる人を育てる</p>
-        <a href="#method">メソッド</a>
+        <a href="#method">4ステップ</a>
         <a href="./programs.html">個人の方へ</a>
         <a href="./corporate.html">法人・案件</a>
         <a href="#proof">実績</a>
@@ -68,14 +68,12 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title" data-hero>
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero__background" aria-hidden="true"></div>
-      <div class="hero__ticker hero__ticker--back" aria-hidden="true"><div class="ticker-track"><span>EXPERIENCE → WORDS → CONTEXT → AI → ACTION → RESULT　</span><span>EXPERIENCE → WORDS → CONTEXT → AI → ACTION → RESULT　</span></div></div>
-      <picture class="hero__portrait" data-hero-portrait>
+      <picture class="hero__portrait">
         <source media="(max-width: 700px)" srcset="./assets/brand/shiiba-hero-portrait-mobile.webp" type="image/webp">
         <img src="./assets/brand/shiiba-hero-portrait.webp" width="803" height="900" alt="青緑の機械的なモチーフと線に包まれた黒髪の女性の横顔" loading="eager" fetchpriority="high">
       </picture>
-      <div class="hero__ticker hero__ticker--front" aria-hidden="true"><div class="ticker-track"><span>経験を、言葉に。　言葉を、文脈に。　文脈を、AIへ。　AIを、現実へ。　</span><span>経験を、言葉に。　言葉を、文脈に。　文脈を、AIへ。　AIを、現実へ。　</span></div></div>
       <div class="hero__copy">
         <div class="hero__copy-inner reveal">
           <p class="hero__eyebrow">椎葉ともこ｜AI時代に伝わる人を育てる</p>
@@ -143,7 +141,7 @@
 
     <section class="section method-section" id="method" aria-labelledby="method-title">
       <div class="container">
-        <p class="section-label">独自メソッド</p>
+        <p class="section-label">伝わる力の流れ</p>
         <h2 id="method-title">伝わる力の4ステップ。</h2>
         <div class="method-grid reveal">
           <article class="method-step"><span class="method-step__number">01</span><h3>見つける</h3><p>経験、得意、違和感、願いを拾う。</p></article>
@@ -224,7 +222,24 @@
         <h2 id="final-title">目的に合う入口から。</h2>
         <div class="final-choice">
           <article class="card route-card route-card--personal reveal"><p class="route-card__label">個人</p><h3>今必要なことを、<br>個別にオーダーする。</h3><a class="button button--coral" href="https://mond.how/ja/shibatomoko" target="_blank" rel="noopener noreferrer" data-mond-link data-analytics="mond_final">Mondで依頼する</a></article>
-          <article class="card route-card route-card--corporate reveal"><p class="route-card__label">法人・プロジェクト</p><h3>研修・教材・AI活用プロジェクトを相談する。</h3><a class="button button--aqua" href="./contact.html" data-analytics="corporate_form">法人・案件を相談する</a></article>
+          <article class="card route-card route-card--corporate reveal"><p class="route-card__label">法人・プロジェクト</p><h3>研修・教材・AI活用プロジェクトを相談する。</h3><a class="button button--aqua" href="#home-inquiry" data-analytics="corporate_form">相談フォームへ進む</a></article>
+        </div>
+        <div class="home-inquiry" id="home-inquiry">
+          <p class="section-label">法人・プロジェクトのご相談</p>
+          <h2>相談内容を送る。</h2>
+          <p class="home-inquiry__intro">決まっている範囲だけで構いません。入力後、ボタンを押すと相談内容が入ったメール画面が開きます。</p>
+          <div class="form-shell" data-form-shell>
+            <form class="corporate-form" method="post" data-corporate-form hidden>
+              <div class="form-grid"><div class="field"><label for="home-company">会社・組織名</label><input id="home-company" name="company" type="text" autocomplete="organization" required></div><div class="field"><label for="home-name">担当者名</label><input id="home-name" name="name" type="text" autocomplete="name" required></div></div>
+              <div class="field"><label for="home-email">メールアドレス</label><input id="home-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="home-topic">相談種別</label><select id="home-topic" name="topic" required><option value="">選択してください</option><option>AI研修</option><option>講師・登壇</option><option>教材・カリキュラム設計</option><option>AI活用コンテンツ・発信</option><option>AI導入・業務実装</option><option>ツール・業務フロー企画</option><option>その他</option></select></div>
+              <div class="form-grid"><div class="field"><label for="home-audience">対象者・人数</label><input id="home-audience" name="audience" type="text" required></div><div class="field"><label for="home-timing">希望時期</label><input id="home-timing" name="timing" type="text" required></div></div>
+              <div class="field"><label for="home-budget">予算帯</label><input id="home-budget" name="budget" type="text" required></div><div class="field"><label for="home-message">相談内容</label><textarea id="home-message" name="message" required></textarea></div>
+              <label class="form-consent"><input type="checkbox" name="privacy" required><span><a href="./privacy.html" target="_blank">プライバシーポリシー</a>に同意します。</span></label>
+              <button class="button button--coral" type="submit" data-analytics="corporate_form">入力内容でメールを開く</button>
+            </form>
+            <div class="form-fallback" data-form-fallback><h3>メールで法人・案件を相談する</h3><p>会社・組織名、相談種別、対象者・人数、希望時期、予算帯、相談内容をご記入ください。</p><a class="button button--coral" href="mailto:y.n.b12201220@gmail.com" data-corporate-mail data-analytics="corporate_form">法人・案件をメールで相談する</a></div>
+          </div>
         </div>
       </div>
     </section>
@@ -233,12 +248,12 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="site-footer__identity"><p class="site-footer__brand">TOMOKO SHIIBA</p><p class="site-footer__statement">AIが作る時代、人間は「伝える力」で差がつく。</p></div>
-      <div><h2>サイト内</h2><nav aria-label="サイト内リンク"><a href="./index.html#method">メソッド</a><a href="./programs.html">個人の方へ</a><a href="./corporate.html">法人・案件</a><a href="./about.html">プロフィール</a><a href="./contact.html">お問い合わせ</a></nav></div>
+      <div><h2>サイト内</h2><nav aria-label="サイト内リンク"><a href="./index.html#method">4ステップ</a><a href="./programs.html">個人の方へ</a><a href="./corporate.html">法人・案件</a><a href="./about.html">プロフィール</a><a href="./contact.html">お問い合わせ</a></nav></div>
       <div><h2>外部・方針</h2><nav aria-label="外部リンクと方針"><a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">Substack</a><a href="https://x.com/tomo19055918" target="_blank" rel="noopener noreferrer">X</a><a href="https://stand.fm/channels/66814520b3df431386ba6bda" target="_blank" rel="noopener noreferrer">stand.fm</a><a href="./privacy.html">プライバシーポリシー</a><a href="./legal.html">ご利用にあたって</a></nav></div>
     </div>
     <div class="container site-footer__bottom"><span>© <span data-current-year>2026</span> Tomoko Shiiba</span><span>AI時代に伝わる人を育てる</span></div>
   </footer>
   <script src="./scripts/site-config.js"></script>
-  <script src="./scripts/main.js" defer></script>
+  <script src="./scripts/main.js?v=20260713-visibility" defer></script>
 </body>
 </html>

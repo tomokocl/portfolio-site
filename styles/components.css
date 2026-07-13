@@ -309,6 +309,10 @@
   font-size: clamp(3rem, 6.3vw, 5.9rem);
 }
 
+.page-hero .section-label {
+  color: var(--aqua-300);
+}
+
 .page-hero__lead {
   max-width: 690px;
   margin-bottom: 0;

@@ -1,8 +1,5 @@
-/* Dynamic home hero */
+/* Home hero */
 .hero {
-  --hero-x: 0px;
-  --hero-y: 0px;
-  --hero-scale: 1;
   display: grid;
   position: relative;
   min-height: min(900px, 100svh);
@@ -118,17 +115,11 @@
 }
 
 .hero__portrait {
-  --hero-x: 0px;
-  --hero-y: 0px;
-  --hero-scale: 1;
   position: absolute;
   z-index: 3;
   right: max(-2vw, -24px);
   bottom: 0;
   width: min(52vw, 790px);
-  transform: translate3d(var(--hero-x), var(--hero-y), 0) scale(var(--hero-scale));
-  transform-origin: 72% 82%;
-  transition: transform 160ms ease-out;
   mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.25) 6%, #000 18%, #000 100%);
 }
 
@@ -136,63 +127,6 @@
   width: 100%;
   height: auto;
   filter: saturate(0.95) contrast(1.04);
-}
-
-.hero__ticker {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-.hero__ticker--back {
-  top: 27%;
-  color: rgba(157, 222, 215, 0.14);
-  font-size: clamp(2.6rem, 5.5vw, 6rem);
-  font-weight: 800;
-  letter-spacing: 0.06em;
-}
-
-.hero__ticker--front {
-  z-index: 4;
-  bottom: 16%;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: clamp(0.95rem, 1.6vw, 1.4rem);
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-shadow: 0 2px 14px rgba(5, 10, 25, 0.7);
-}
-
-.ticker-track {
-  display: inline-flex;
-  width: max-content;
-  animation: ticker-left 36s linear infinite;
-}
-
-.hero__ticker--back .ticker-track {
-  animation-name: ticker-right;
-  animation-duration: 48s;
-}
-
-.ticker-track span {
-  padding-right: 2.5em;
-}
-
-@keyframes ticker-left {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-@keyframes ticker-right {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); }
-}
-
-.is-page-hidden .ticker-track {
-  animation-play-state: paused;
 }
 
 /* Trust and route choice */
@@ -246,8 +180,22 @@
 }
 
 .route-card--personal {
+  color: var(--color-text);
   background: var(--aqua-100);
   border-color: rgba(95, 196, 190, 0.5);
+}
+
+.route-card--personal h2,
+.route-card--personal h3 {
+  color: var(--ink-950);
+}
+
+.route-card--personal p {
+  color: var(--color-text);
+}
+
+.route-card--personal .route-card__label {
+  color: var(--coral-text);
 }
 
 .route-card--corporate {
@@ -523,6 +471,10 @@
   color: rgba(255, 255, 255, 0.73);
 }
 
+.order-band .section-label {
+  color: var(--aqua-300);
+}
+
 .order-band__aside {
   padding: 30px;
   color: var(--ink-950);
@@ -597,13 +549,42 @@
   background: var(--ink-900);
 }
 
-.final-section h2,
-.final-section h3 {
+.final-section > .container > h2,
+.home-inquiry > h2 {
   color: var(--color-white);
+}
+
+.final-section .section-label {
+  color: var(--aqua-300);
 }
 
 .final-choice .route-card {
   min-height: 340px;
+}
+
+.home-inquiry {
+  margin-top: clamp(64px, 9vw, 108px);
+  padding-top: clamp(52px, 7vw, 84px);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.home-inquiry__intro {
+  max-width: 720px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: var(--font-body-lg);
+}
+
+.home-inquiry .form-shell {
+  margin-top: 36px;
+}
+
+.home-inquiry .corporate-form,
+.home-inquiry .form-fallback {
+  color: var(--color-text);
+}
+
+.home-inquiry .form-fallback h3 {
+  color: var(--ink-950);
 }
 
 /* Personal, corporate, about and contact pages */
@@ -859,14 +840,6 @@
     width: min(65vw, 570px);
   }
 
-  .hero__ticker--back {
-    display: none;
-  }
-
-  .hero__ticker--front {
-    bottom: 7%;
-  }
-
   .section-heading-split,
   .proof-layout,
   .order-band__grid,
@@ -968,11 +941,6 @@
     mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.22) 5%, #000 21%, #000 100%);
   }
 
-  .hero__ticker--front {
-    bottom: 3.5%;
-    font-size: 0.78rem;
-  }
-
   .trust-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1050,16 +1018,5 @@
   .timeline__item {
     grid-template-columns: 1fr;
     gap: 8px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ticker-track {
-    animation: none !important;
-  }
-
-  .hero__portrait {
-    transform: none !important;
-    transition: none !important;
   }
 }

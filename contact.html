@@ -6,7 +6,7 @@
   <meta name="description" content="個人向けの単発オーダーはMondへ。生成AI研修、登壇、教材・コンテンツ、AI活用プロジェクトは法人・案件窓口からお問い合わせください。">
   <meta name="theme-color" content="#11182D"><link rel="canonical" href="https://tomokocl.github.io/portfolio-site/contact.html">
   <meta property="og:type" content="website"><meta property="og:title" content="お問い合わせ｜椎葉ともこ"><meta property="og:description" content="個人向けオーダーと法人・案件の入口をご案内します。"><meta property="og:image" content="https://tomokocl.github.io/portfolio-site/assets/brand/hero-human-signal.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://tomokocl.github.io/portfolio-site/assets/brand/hero-human-signal.png">
-  <link rel="icon" href="./assets/brand/shiiba-avatar-thumb.webp" type="image/webp"><link rel="stylesheet" href="./styles/tokens.css"><link rel="stylesheet" href="./styles/base.css"><link rel="stylesheet" href="./styles/components.css?v=20260713-visibility"><link rel="stylesheet" href="./styles/pages.css?v=20260713-visibility">
+  <link rel="icon" href="./assets/brand/shiiba-avatar-thumb.webp" type="image/webp"><link rel="stylesheet" href="./styles/tokens.css"><link rel="stylesheet" href="./styles/base.css"><link rel="stylesheet" href="./styles/components.css?v=20260713-quickform"><link rel="stylesheet" href="./styles/pages.css?v=20260713-visibility">
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
@@ -16,24 +16,31 @@
     <section class="page-hero" aria-labelledby="page-title"><div class="container page-hero__grid"><div><p class="section-label">お問い合わせ</p><h1 id="page-title">個人と法人で、<br>入口を分けています。</h1><p class="page-hero__lead">個人向けの単発オーダーはMondへ。研修・登壇・教材・コンテンツ・AI活用プロジェクトは法人・案件窓口へお進みください。</p></div><p class="page-hero__marker">個人 → Mond<br>法人・案件 → 専用窓口</p></div></section>
 
     <section class="section" aria-labelledby="route-title"><div class="container"><p class="section-label">依頼の入口</p><h2 id="route-title">目的に合う方を選んでください。</h2><div class="contact-route">
-      <article class="card contact-route__card reveal"><h3>個人向けの単発オーダーはMondへ</h3><p>得意や経験の言語化、AIへの文脈設計、発信・商品・仕事の最初の形、認知の転換など、今必要なことを内容と予算を決めて送れます。</p><p><strong><span data-mond-price></span></strong></p><a class="button button--coral" href="https://mond.how/ja/shibatomoko" target="_blank" rel="noopener noreferrer" data-mond-link data-analytics="mond_personal_page">Mondで依頼する</a></article>
+      <article class="card contact-route__card reveal"><h3>個人向けの単発オーダーはMondへ</h3><p>得意や経験の言語化、AIへの文脈設計、発信・商品・仕事の最初の形、認知の転換など、今必要なことを内容と予算を決めて送れます。</p><a class="button button--coral" href="https://mond.how/ja/shibatomoko" target="_blank" rel="noopener noreferrer" data-mond-link data-analytics="mond_personal_page">Mondで依頼する</a></article>
       <article class="card contact-route__card reveal"><h3>法人・プロジェクトのご相談</h3><p>生成AI研修、講師・登壇、教材・カリキュラム、コンテンツ、AI導入・業務実装、ツール・業務フロー企画。</p><a class="button button--ink" href="#corporate-inquiry">問い合わせ窓口へ進む</a></article>
     </div></div></section>
 
-    <section class="section" id="corporate-inquiry" style="background: var(--color-white)" aria-labelledby="inquiry-title"><div class="container"><p class="section-label">法人・案件</p><h2 id="inquiry-title">相談内容を送る。</h2><p class="section-intro">会社・組織名、相談種別、対象者・人数、希望時期、予算帯、相談内容を分かる範囲でお知らせください。</p><div class="form-shell" data-form-shell>
-      <form class="corporate-form" method="post" data-corporate-form hidden>
-        <div class="form-grid"><div class="field"><label for="company">会社・組織名</label><input id="company" name="company" type="text" autocomplete="organization" required></div><div class="field"><label for="name">担当者名</label><input id="name" name="name" type="text" autocomplete="name" required></div></div>
-        <div class="field"><label for="email">メールアドレス</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-        <div class="field"><label for="topic">相談種別</label><select id="topic" name="topic" required><option value="">選択してください</option><option>AI研修</option><option>講師・登壇</option><option>教材・カリキュラム設計</option><option>AI活用コンテンツ・発信</option><option>AI導入・業務実装</option><option>ツール・業務フロー企画</option><option>その他</option></select></div>
-        <div class="form-grid"><div class="field"><label for="audience">対象者・人数</label><input id="audience" name="audience" type="text" required></div><div class="field"><label for="timing">希望時期</label><input id="timing" name="timing" type="text" required></div></div>
-        <div class="field"><label for="budget">予算帯</label><input id="budget" name="budget" type="text" required></div><div class="field"><label for="message">相談内容</label><textarea id="message" name="message" required></textarea></div>
-        <label class="form-consent"><input type="checkbox" name="privacy" required><span><a href="./privacy.html" target="_blank">プライバシーポリシー</a>に同意します。</span></label><button class="button button--coral" type="submit" data-analytics="corporate_form">入力内容でメールを開く</button>
+    <section class="section" id="corporate-inquiry" style="background: var(--color-white)" aria-labelledby="inquiry-title"><div class="container"><p class="section-label">法人・案件</p><h2 id="inquiry-title">相談内容を送る。</h2><p class="section-intro">近い用件を選び、内容と希望時期を分かる範囲でお知らせください。</p><div class="form-shell" data-form-shell>
+      <form class="corporate-form quick-inquiry-form" method="post" data-corporate-form hidden>
+        <h3>お問い合わせ内容</h3>
+        <div class="field"><label for="contact-name">お名前・会社名</label><input id="contact-name" name="name" type="text" autocomplete="name" placeholder="例：株式会社〇〇　山田様"></div>
+        <div class="field"><label for="contact-email">メールアドレス</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="mail@example.com" required></div>
+        <fieldset class="quick-inquiry__topics"><legend>近い用件</legend><div class="inquiry-options">
+          <label><input type="radio" name="topic" value="AI研修・講師・登壇" checked><span>AI研修・講師・登壇</span></label>
+          <label><input type="radio" name="topic" value="AIライティング・SNS"><span>AIライティング・SNS</span></label>
+          <label><input type="radio" name="topic" value="業務改善・ツール制作"><span>業務改善・ツール制作</span></label>
+          <label><input type="radio" name="topic" value="商品・コンテンツ設計"><span>商品・コンテンツ設計</span></label>
+          <label><input type="radio" name="topic" value="その他"><span>その他</span></label>
+        </div></fieldset>
+        <div class="field"><label for="contact-message">内容</label><textarea id="contact-message" name="message" rows="5" placeholder="ご希望の内容、対象者、目的、現在の課題などをご記入ください。" required></textarea></div>
+        <div class="field"><label for="contact-timing">希望時期</label><input id="contact-timing" name="timing" type="text" placeholder="例：8月ごろ、未定、なるべく早め"></div>
+        <button class="button button--coral" type="submit" data-analytics="corporate_form">相談メールを作成する</button>
       </form>
-      <div class="form-fallback" data-form-fallback><h3>メールで法人・案件を相談する</h3><p>必要項目が入ったメール文面を開きます。内容を記入してお送りください。</p><a class="button button--coral" href="mailto:y.n.b12201220@gmail.com" data-corporate-mail data-analytics="corporate_form">法人・案件をメールで相談する</a></div>
+      <div class="form-fallback" data-form-fallback><h3>メールで法人・案件を相談する</h3><p>お名前・会社名、近い用件、内容、希望時期をご記入ください。</p><a class="button button--coral" href="mailto:y.n.b12201220@gmail.com" data-corporate-mail data-analytics="corporate_form">法人・案件をメールで相談する</a></div>
     </div></div></section>
   </main>
 
   <footer class="site-footer"><div class="container site-footer__inner"><div class="site-footer__identity"><p class="site-footer__brand">TOMOKO SHIIBA</p><p class="site-footer__statement">AIが作る時代、人間は「伝える力」で差がつく。</p></div><div><h2>サイト内</h2><nav aria-label="サイト内リンク"><a href="./index.html#method">4ステップ</a><a href="./programs.html">個人の方へ</a><a href="./corporate.html">法人・案件</a><a href="./about.html">プロフィール</a><a href="./contact.html">お問い合わせ</a></nav></div><div><h2>外部・方針</h2><nav aria-label="外部リンクと方針"><a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">Substack</a><a href="https://x.com/tomo19055918" target="_blank" rel="noopener noreferrer">X</a><a href="./privacy.html">プライバシーポリシー</a><a href="./legal.html">ご利用にあたって</a></nav></div></div><div class="container site-footer__bottom"><span>© <span data-current-year>2026</span> Tomoko Shiiba</span><span>AI時代に伝わる人を育てる</span></div></footer>
-  <script src="./scripts/site-config.js"></script><script src="./scripts/main.js?v=20260713-visibility" defer></script>
+  <script src="./scripts/site-config.js"></script><script src="./scripts/main.js?v=20260713-quickform" defer></script>
 </body>
 </html>

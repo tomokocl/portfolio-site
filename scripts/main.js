@@ -71,10 +71,6 @@
   document.querySelectorAll("[data-mond-link]").forEach((link) => {
     if (config.mondUrl) link.href = config.mondUrl;
   });
-  document.querySelectorAll("[data-mond-price]").forEach((node) => {
-    if (config.mondMinimumPrice) node.textContent = config.mondMinimumPrice;
-  });
-
   const moshReady = Boolean(config.moshEnabled && config.moshUrl);
   document.querySelectorAll("[data-mosh-section]").forEach((section) => {
     section.hidden = !moshReady;
@@ -85,16 +81,14 @@
   const corporateBody = [
     "椎葉ともこ様",
     "",
-    "法人・プロジェクトについて相談します。",
+    "サイトからのお問い合わせです。",
     "",
-    "会社・組織名：",
-    "担当者名：",
+    "用件：",
+    "お名前・会社名：",
     "メールアドレス：",
-    "相談種別：",
-    "対象者・人数：",
     "希望時期：",
-    "予算帯：",
-    "相談内容："
+    "",
+    "内容："
   ].join("\n");
 
   document.querySelectorAll("[data-corporate-mail]").forEach((link) => {
@@ -125,22 +119,24 @@
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const data = new FormData(form);
-      const values = [
-        ["会社・組織名", "company"],
-        ["担当者名", "name"],
-        ["メールアドレス", "email"],
-        ["相談種別", "topic"],
-        ["対象者・人数", "audience"],
-        ["希望時期", "timing"],
-        ["予算帯", "budget"],
-        ["相談内容", "message"]
-      ];
+      const topic = String(data.get("topic") || "お問い合わせ").trim();
+      const name = String(data.get("name") || "未入力").trim();
+      const email = String(data.get("email") || "未入力").trim();
+      const timing = String(data.get("timing") || "未入力").trim();
+      const message = String(data.get("message") || "").trim();
+      const subject = `サイトからのお問い合わせ: ${topic}`;
       const body = [
-        "法人・プロジェクトについて相談します。",
+        "サイトからのお問い合わせです。",
         "",
-        ...values.map(([label, name]) => `${label}：${String(data.get(name) || "").trim()}`)
+        `用件: ${topic}`,
+        `お名前・会社名: ${name}`,
+        `メールアドレス: ${email}`,
+        `希望時期: ${timing}`,
+        "",
+        "内容:",
+        message
       ].join("\n");
-      window.location.href = `mailto:${config.corporateEmail}?subject=${encodeURIComponent(corporateSubject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:${config.corporateEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   });
 

@@ -6,7 +6,7 @@
   <meta name="description" content="生成AI研修、講師・登壇、教材・カリキュラム設計、AI活用コンテンツ、業務実装、ツール・業務フロー企画。理解から現場の行動まで設計します。">
   <meta name="theme-color" content="#11182D"><link rel="canonical" href="https://tomokocl.github.io/portfolio-site/corporate.html">
   <meta property="og:type" content="website"><meta property="og:title" content="生成AI研修・教材設計・講師・AI活用支援｜椎葉ともこ"><meta property="og:description" content="AIを教えるだけでなく、人と仕事が動くところまで設計する。"><meta property="og:image" content="https://tomokocl.github.io/portfolio-site/assets/brand/hero-human-signal.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://tomokocl.github.io/portfolio-site/assets/brand/hero-human-signal.png">
-  <link rel="icon" href="./assets/brand/shiiba-avatar-thumb.webp" type="image/webp"><link rel="stylesheet" href="./styles/tokens.css"><link rel="stylesheet" href="./styles/base.css"><link rel="stylesheet" href="./styles/components.css?v=20260713-visibility"><link rel="stylesheet" href="./styles/pages.css?v=20260713-visibility">
+  <link rel="icon" href="./assets/brand/shiiba-avatar-thumb.webp" type="image/webp"><link rel="stylesheet" href="./styles/tokens.css"><link rel="stylesheet" href="./styles/base.css"><link rel="stylesheet" href="./styles/components.css?v=20260713-quickform"><link rel="stylesheet" href="./styles/pages.css?v=20260713-visibility">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"椎葉ともこ｜法人・案件のご相談","url":"https://tomokocl.github.io/portfolio-site/corporate.html","description":"生成AI研修、講師・登壇、教材・講座設計、AI活用コンテンツ、AI導入・業務実装、ツール・業務フロー企画。"}</script>
 </head>
 <body>
@@ -58,19 +58,26 @@
     </div></div></section>
 
     <section class="section" id="inquiry" aria-labelledby="inquiry-title"><div class="container"><p class="section-label">お問い合わせ</p><h2 id="inquiry-title">法人・案件について相談する。</h2><p class="section-intro">研修テーマや成果物が固まっていない段階でも、対象者と変えたい状態から整理できます。</p><div class="form-shell" data-form-shell>
-      <form class="corporate-form" method="post" data-corporate-form hidden>
-        <div class="form-grid"><div class="field"><label for="company">会社・組織名</label><input id="company" name="company" type="text" autocomplete="organization" required></div><div class="field"><label for="name">担当者名</label><input id="name" name="name" type="text" autocomplete="name" required></div></div>
-        <div class="field"><label for="email">メールアドレス</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-        <div class="field"><label for="topic">相談種別</label><select id="topic" name="topic" required><option value="">選択してください</option><option>AI研修</option><option>講師・登壇</option><option>教材・カリキュラム設計</option><option>AI活用コンテンツ・発信</option><option>AI導入・業務実装</option><option>ツール・業務フロー企画</option><option>その他</option></select></div>
-        <div class="form-grid"><div class="field"><label for="audience">対象者・人数</label><input id="audience" name="audience" type="text" required></div><div class="field"><label for="timing">希望時期</label><input id="timing" name="timing" type="text" required></div></div>
-        <div class="field"><label for="budget">予算帯</label><input id="budget" name="budget" type="text" required></div><div class="field"><label for="message">相談内容</label><textarea id="message" name="message" required></textarea></div>
-        <label class="form-consent"><input type="checkbox" name="privacy" required><span><a href="./privacy.html" target="_blank">プライバシーポリシー</a>に同意します。</span></label><button class="button button--coral" type="submit" data-analytics="corporate_form">入力内容でメールを開く</button>
+      <form class="corporate-form quick-inquiry-form" method="post" data-corporate-form hidden>
+        <h3>お問い合わせ内容</h3>
+        <div class="field"><label for="corporate-name">お名前・会社名</label><input id="corporate-name" name="name" type="text" autocomplete="name" placeholder="例：株式会社〇〇　山田様"></div>
+        <div class="field"><label for="corporate-email">メールアドレス</label><input id="corporate-email" name="email" type="email" autocomplete="email" placeholder="mail@example.com" required></div>
+        <fieldset class="quick-inquiry__topics"><legend>近い用件</legend><div class="inquiry-options">
+          <label><input type="radio" name="topic" value="AI研修・講師・登壇" checked><span>AI研修・講師・登壇</span></label>
+          <label><input type="radio" name="topic" value="AIライティング・SNS"><span>AIライティング・SNS</span></label>
+          <label><input type="radio" name="topic" value="業務改善・ツール制作"><span>業務改善・ツール制作</span></label>
+          <label><input type="radio" name="topic" value="商品・コンテンツ設計"><span>商品・コンテンツ設計</span></label>
+          <label><input type="radio" name="topic" value="その他"><span>その他</span></label>
+        </div></fieldset>
+        <div class="field"><label for="corporate-message">内容</label><textarea id="corporate-message" name="message" rows="5" placeholder="ご希望の内容、対象者、目的、現在の課題などをご記入ください。" required></textarea></div>
+        <div class="field"><label for="corporate-timing">希望時期</label><input id="corporate-timing" name="timing" type="text" placeholder="例：8月ごろ、未定、なるべく早め"></div>
+        <button class="button button--coral" type="submit" data-analytics="corporate_form">相談メールを作成する</button>
       </form>
-      <div class="form-fallback" data-form-fallback><h3>メールで相談内容を送る</h3><p>会社・組織名、担当者名、相談種別、対象者・人数、希望時期、予算帯、相談内容をご記入ください。</p><a class="button button--coral" href="mailto:y.n.b12201220@gmail.com" data-corporate-mail data-analytics="corporate_form">法人・案件をメールで相談する</a></div>
+      <div class="form-fallback" data-form-fallback><h3>メールで相談内容を送る</h3><p>お名前・会社名、近い用件、内容、希望時期をご記入ください。</p><a class="button button--coral" href="mailto:y.n.b12201220@gmail.com" data-corporate-mail data-analytics="corporate_form">法人・案件をメールで相談する</a></div>
     </div></div></section>
   </main>
 
   <footer class="site-footer"><div class="container site-footer__inner"><div class="site-footer__identity"><p class="site-footer__brand">TOMOKO SHIIBA</p><p class="site-footer__statement">AIが作る時代、人間は「伝える力」で差がつく。</p></div><div><h2>サイト内</h2><nav aria-label="サイト内リンク"><a href="./index.html#method">4ステップ</a><a href="./programs.html">個人の方へ</a><a href="./corporate.html">法人・案件</a><a href="./about.html">プロフィール</a><a href="./contact.html">お問い合わせ</a></nav></div><div><h2>外部・方針</h2><nav aria-label="外部リンクと方針"><a href="https://substack.com/@shiibatomoko" target="_blank" rel="noopener noreferrer">Substack</a><a href="https://x.com/tomo19055918" target="_blank" rel="noopener noreferrer">X</a><a href="./privacy.html">プライバシーポリシー</a><a href="./legal.html">ご利用にあたって</a></nav></div></div><div class="container site-footer__bottom"><span>© <span data-current-year>2026</span> Tomoko Shiiba</span><span>AI時代に伝わる人を育てる</span></div></footer>
-  <script src="./scripts/site-config.js"></script><script src="./scripts/main.js?v=20260713-visibility" defer></script>
+  <script src="./scripts/site-config.js"></script><script src="./scripts/main.js?v=20260713-quickform" defer></script>
 </body>
 </html>

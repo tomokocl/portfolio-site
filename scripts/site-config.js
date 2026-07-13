@@ -1,6 +1,5 @@
 window.SITE_CONFIG = Object.freeze({
   mondUrl: "https://mond.how/ja/shibatomoko",
-  mondMinimumPrice: "10,000円〜",
   moshEnabled: false,
   moshUrl: "",
   corporateFormUrl: "",

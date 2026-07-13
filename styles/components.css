@@ -411,6 +411,68 @@
   border-radius: var(--radius-lg);
 }
 
+.corporate-form h3 {
+  color: var(--ink-950);
+}
+
+.quick-inquiry__topics {
+  min-width: 0;
+  margin: 0 0 22px;
+  padding: 0;
+  border: 0;
+}
+
+.quick-inquiry__topics legend {
+  margin-bottom: 8px;
+}
+
+.inquiry-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.inquiry-options label {
+  display: inline-flex;
+}
+
+.inquiry-options input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.inquiry-options span {
+  display: inline-flex;
+  min-height: 40px;
+  padding: 8px 14px;
+  align-items: center;
+  color: var(--color-text);
+  background: var(--color-white);
+  border: 1px solid rgba(23, 33, 58, 0.24);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+.inquiry-options input:checked + span {
+  color: var(--ink-950);
+  background: var(--aqua-300);
+  border-color: var(--aqua-500);
+}
+
+.inquiry-options input:focus-visible + span {
+  outline: 3px solid var(--coral-300);
+  outline-offset: 3px;
+}
+
+.quick-inquiry-form > .button {
+  width: 100%;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
